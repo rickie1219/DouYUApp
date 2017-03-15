@@ -20,6 +20,7 @@ class Yo_MainTabBarController: CYLTabBarController {
     }
     
 
+    // maerk: - 设置子试图
     func setupViewControllers() {
         let homeVC = Yo_HomeViewController()
         let homeNavi = Yo_MainNavigationController()
