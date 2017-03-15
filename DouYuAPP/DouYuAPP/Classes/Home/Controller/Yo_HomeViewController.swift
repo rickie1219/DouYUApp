@@ -12,9 +12,31 @@ class Yo_HomeViewController: GenericViewController<Yo_HomeContentView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        contentView.configureNavigation(viewController: self)
+        //        contentView.setDelegate(ViewModel: homeViewModel)
     }
     
+    public func logoDidClick() {
+        print("logo")
+    }
     
+    public func searchDidClick() {
+        print("search")
+    }
+    
+    public func historyDidClick() {
+        print("history")
+    }
+    
+    public func scanDidClick() {
+        print("scan")
+    }
+    
+    private lazy var homeViewModel: Yo_HomeViewModel = {
+        let viewModel = Yo_HomeViewModel()
+        return viewModel
+    }()
 }
+
+

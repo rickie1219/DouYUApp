@@ -8,9 +8,42 @@
 
 import UIKit
 
-class Yo_HomeContentView: GenericView {
+protocol Yo_HomeContentViewDelegate: NSObjectProtocol {
 
+    func homeNavigationLeftBarDidClick()
+}
+
+class Yo_HomeContentView: GenericView {
+    
+    var contentViewDelegate: Yo_HomeContentViewDelegate?
+    
+    public var viewController: UIViewController?
+    
     override func configureView() {
         super.configureView()
+        
+ 
     }
+    
+    // MARK: - 设置导航栏
+    public func configureNavigation(viewController vc: UIViewController) {
+        vc.navigationItem.leftBarButtonItem = UIBarButtonItem.item(imageName: "logo", target: vc, action: .logoDidClick)
+        
+        let searchItem = UIBarButtonItem.item(imageName: "btn_search", target: vc, action: .searchDidClick)
+        let scanItem = UIBarButtonItem.item(imageName: "Image_scan", target: vc, action: .scanDidClick)
+        let historyItem = UIBarButtonItem.item(imageName: "image_my_history", target: vc, action: .historyDidClick)
+        vc.navigationItem.rightBarButtonItems = [historyItem, scanItem, searchItem]
+    }
+    
+    public func setDelegate(ViewModel vm: Yo_HomeViewModel) {
+        contentViewDelegate = vm
+    }
+    
+}
+
+private extension Selector {
+    static let logoDidClick = #selector(Yo_HomeViewController.logoDidClick)
+    static let searchDidClick = #selector(Yo_HomeViewController.searchDidClick)
+    static let scanDidClick = #selector(Yo_HomeViewController.scanDidClick)
+    static let historyDidClick = #selector(Yo_HomeViewController.historyDidClick)
 }
