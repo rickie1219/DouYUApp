@@ -30,8 +30,6 @@
 		C8B60C901E79486100AE7BCC /* Yo_MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C8C1E79486100AE7BCC /* Yo_MainCategory.swift */; };
 		C8B60C911E79486100AE7BCC /* Yo_MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C8E1E79486100AE7BCC /* Yo_MainNavigationController.swift */; };
 		C8B60C921E79486100AE7BCC /* Yo_MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C8F1E79486100AE7BCC /* Yo_MainTabBarController.swift */; };
-		C8B60C941E7949F400AE7BCC /* Yo_tEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C931E7949F400AE7BCC /* Yo_tEST.swift */; };
-		C8B60C961E7949FB00AE7BCC /* Yo_DDAAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C951E7949FB00AE7BCC /* Yo_DDAAD.swift */; };
 		EC296E95D6E1C610A914514B /* Pods_DouYuAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB6B5F88308139976277775 /* Pods_DouYuAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,8 +83,6 @@
 		C8B60C8C1E79486100AE7BCC /* Yo_MainCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainCategory.swift; sourceTree = "<group>"; };
 		C8B60C8E1E79486100AE7BCC /* Yo_MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainNavigationController.swift; sourceTree = "<group>"; };
 		C8B60C8F1E79486100AE7BCC /* Yo_MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainTabBarController.swift; sourceTree = "<group>"; };
-		C8B60C931E7949F400AE7BCC /* Yo_tEST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_tEST.swift; sourceTree = "<group>"; };
-		C8B60C951E7949FB00AE7BCC /* Yo_DDAAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_DDAAD.swift; sourceTree = "<group>"; };
 		CFC19344B5DBA48E3E7361BD /* Pods_DouYuAPPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuAPPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67E80F4407FC38DCA0C1A9C /* Pods-DouYuAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPP/Pods-DouYuAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		EC839EB0D65B8940088F3D55 /* Pods-DouYuAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPP/Pods-DouYuAPP.release.xcconfig"; sourceTree = "<group>"; };
@@ -331,7 +327,6 @@
 			isa = PBXGroup;
 			children = (
 				C8B60C8C1E79486100AE7BCC /* Yo_MainCategory.swift */,
-				C8B60C931E7949F400AE7BCC /* Yo_tEST.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -341,7 +336,6 @@
 			children = (
 				C8B60C8E1E79486100AE7BCC /* Yo_MainNavigationController.swift */,
 				C8B60C8F1E79486100AE7BCC /* Yo_MainTabBarController.swift */,
-				C8B60C951E7949FB00AE7BCC /* Yo_DDAAD.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -725,12 +719,10 @@
 				C8B60C921E79486100AE7BCC /* Yo_MainTabBarController.swift in Sources */,
 				C8B60C771E79128100AE7BCC /* Yo_ProfileContentView.swift in Sources */,
 				C8B60C541E79115500AE7BCC /* GenericCollectionViewCell.swift in Sources */,
-				C8B60C941E7949F400AE7BCC /* Yo_tEST.swift in Sources */,
 				C8B60C571E79115500AE7BCC /* GenericViewController.swift in Sources */,
 				C8B60C911E79486100AE7BCC /* Yo_MainNavigationController.swift in Sources */,
 				C8B60C631E7911F000AE7BCC /* Yo_LiveViewController.swift in Sources */,
 				C8B60C561E79115500AE7BCC /* GenericView.swift in Sources */,
-				C8B60C961E7949FB00AE7BCC /* Yo_DDAAD.swift in Sources */,
 				C8B60C751E79127400AE7BCC /* Yo_FllowContentView.swift in Sources */,
 				C8B60C731E79126800AE7BCC /* Yo_LiveContentView.swift in Sources */,
 				C8B60C6F1E7911FD00AE7BCC /* Yo_ProfileViewController.swift in Sources */,
