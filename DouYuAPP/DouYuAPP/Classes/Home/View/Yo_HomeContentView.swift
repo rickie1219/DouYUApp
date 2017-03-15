@@ -13,5 +13,4 @@ class Yo_HomeContentView: GenericView {
     override func configureView() {
         super.configureView()
     }
-
 }

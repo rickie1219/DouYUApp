@@ -15,7 +15,6 @@ class Yo_HomeViewController: GenericViewController<Yo_HomeContentView> {
 
         
     }
-
     
-
+    
 }
