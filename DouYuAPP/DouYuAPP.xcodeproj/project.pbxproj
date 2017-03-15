@@ -26,10 +26,10 @@
 		C8B60C731E79126800AE7BCC /* Yo_LiveContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C721E79126800AE7BCC /* Yo_LiveContentView.swift */; };
 		C8B60C751E79127400AE7BCC /* Yo_FllowContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C741E79127400AE7BCC /* Yo_FllowContentView.swift */; };
 		C8B60C771E79128100AE7BCC /* Yo_ProfileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C761E79128100AE7BCC /* Yo_ProfileContentView.swift */; };
-		C8B60C7B1E7917B000AE7BCC /* Yo_MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C791E7917B000AE7BCC /* Yo_MainNavigationController.swift */; };
-		C8B60C7C1E7917B000AE7BCC /* Yo_MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C7A1E7917B000AE7BCC /* Yo_MainTabBarController.swift */; };
-		C8B60C7F1E7938FD00AE7BCC /* Yo_MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C7E1E7938FD00AE7BCC /* Yo_MainCategory.swift */; };
 		C8B60C811E793FB800AE7BCC /* Yo_HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C801E793FB800AE7BCC /* Yo_HomeViewModel.swift */; };
+		C8B60C871E79477500AE7BCC /* Yo_MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C831E79477500AE7BCC /* Yo_MainCategory.swift */; };
+		C8B60C881E79477500AE7BCC /* Yo_MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C851E79477500AE7BCC /* Yo_MainNavigationController.swift */; };
+		C8B60C891E79477500AE7BCC /* Yo_MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C861E79477500AE7BCC /* Yo_MainTabBarController.swift */; };
 		EC296E95D6E1C610A914514B /* Pods_DouYuAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB6B5F88308139976277775 /* Pods_DouYuAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,10 +79,10 @@
 		C8B60C721E79126800AE7BCC /* Yo_LiveContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_LiveContentView.swift; sourceTree = "<group>"; };
 		C8B60C741E79127400AE7BCC /* Yo_FllowContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_FllowContentView.swift; sourceTree = "<group>"; };
 		C8B60C761E79128100AE7BCC /* Yo_ProfileContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_ProfileContentView.swift; sourceTree = "<group>"; };
-		C8B60C791E7917B000AE7BCC /* Yo_MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainNavigationController.swift; sourceTree = "<group>"; };
-		C8B60C7A1E7917B000AE7BCC /* Yo_MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainTabBarController.swift; sourceTree = "<group>"; };
-		C8B60C7E1E7938FD00AE7BCC /* Yo_MainCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainCategory.swift; sourceTree = "<group>"; };
 		C8B60C801E793FB800AE7BCC /* Yo_HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_HomeViewModel.swift; sourceTree = "<group>"; };
+		C8B60C831E79477500AE7BCC /* Yo_MainCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainCategory.swift; sourceTree = "<group>"; };
+		C8B60C851E79477500AE7BCC /* Yo_MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainNavigationController.swift; sourceTree = "<group>"; };
+		C8B60C861E79477500AE7BCC /* Yo_MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainTabBarController.swift; sourceTree = "<group>"; };
 		CFC19344B5DBA48E3E7361BD /* Pods_DouYuAPPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuAPPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67E80F4407FC38DCA0C1A9C /* Pods-DouYuAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPP/Pods-DouYuAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		EC839EB0D65B8940088F3D55 /* Pods-DouYuAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPP/Pods-DouYuAPP.release.xcconfig"; sourceTree = "<group>"; };
@@ -314,21 +314,21 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		C8B60C781E7917B000AE7BCC /* Controller */ = {
+		C8B60C821E79477500AE7BCC /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				C8B60C791E7917B000AE7BCC /* Yo_MainNavigationController.swift */,
-				C8B60C7A1E7917B000AE7BCC /* Yo_MainTabBarController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C8B60C7D1E7938B200AE7BCC /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				C8B60C7E1E7938FD00AE7BCC /* Yo_MainCategory.swift */,
+				C8B60C831E79477500AE7BCC /* Yo_MainCategory.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		C8B60C841E79477500AE7BCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C8B60C851E79477500AE7BCC /* Yo_MainNavigationController.swift */,
+				C8B60C861E79477500AE7BCC /* Yo_MainTabBarController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		C8F25DD81E77E9EE009AC961 /* Classes */ = {
@@ -360,8 +360,8 @@
 		C8F25DDA1E77E9EE009AC961 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				C8B60C7D1E7938B200AE7BCC /* Category */,
-				C8B60C781E7917B000AE7BCC /* Controller */,
+				C8B60C841E79477500AE7BCC /* Controller */,
+				C8B60C821E79477500AE7BCC /* Category */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -715,22 +715,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B60C5D1E7911B500AE7BCC /* Yo_HomeViewController.swift in Sources */,
-				C8B60C7C1E7917B000AE7BCC /* Yo_MainTabBarController.swift in Sources */,
 				C8B60C551E79115500AE7BCC /* GenericTableViewCell.swift in Sources */,
+				C8B60C891E79477500AE7BCC /* Yo_MainTabBarController.swift in Sources */,
 				C8B60C771E79128100AE7BCC /* Yo_ProfileContentView.swift in Sources */,
-				C8B60C7B1E7917B000AE7BCC /* Yo_MainNavigationController.swift in Sources */,
 				C8B60C541E79115500AE7BCC /* GenericCollectionViewCell.swift in Sources */,
 				C8B60C571E79115500AE7BCC /* GenericViewController.swift in Sources */,
+				C8B60C881E79477500AE7BCC /* Yo_MainNavigationController.swift in Sources */,
 				C8B60C631E7911F000AE7BCC /* Yo_LiveViewController.swift in Sources */,
 				C8B60C561E79115500AE7BCC /* GenericView.swift in Sources */,
 				C8B60C751E79127400AE7BCC /* Yo_FllowContentView.swift in Sources */,
 				C8B60C731E79126800AE7BCC /* Yo_LiveContentView.swift in Sources */,
 				C8B60C6F1E7911FD00AE7BCC /* Yo_ProfileViewController.swift in Sources */,
+				C8B60C871E79477500AE7BCC /* Yo_MainCategory.swift in Sources */,
 				C8B60C711E79121900AE7BCC /* Yo_HomeContentView.swift in Sources */,
 				C8B60C531E79115500AE7BCC /* ConfigurableView.swift in Sources */,
 				C8B60C691E7911F600AE7BCC /* Yo_FllowViewController.swift in Sources */,
 				C8B60C811E793FB800AE7BCC /* Yo_HomeViewModel.swift in Sources */,
-				C8B60C7F1E7938FD00AE7BCC /* Yo_MainCategory.swift in Sources */,
 				1FD4D2E81E76CDA6003D485F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
