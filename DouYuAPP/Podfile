@@ -7,6 +7,9 @@ target 'DouYuAPP' do
 
   pod 'CYLTabBarController'
   pod 'SnapKit', '~> 3.2.0'
+  pod 'ObjectMapper'
+  pod 'Alamofire'
+  pod 'KeychainAccess'
 
   target 'DouYuAPPTests' do
     inherit! :search_paths
