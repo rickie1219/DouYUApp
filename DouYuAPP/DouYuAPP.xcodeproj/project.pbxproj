@@ -13,6 +13,18 @@
 		1FD4D3081E76CDA6003D485F /* DouYuAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD4D3071E76CDA6003D485F /* DouYuAPPUITests.swift */; };
 		8EF407FBE85D8FC903F7A088 /* Pods_DouYuAPPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F54649E5C0E5680D3670074 /* Pods_DouYuAPPTests.framework */; };
 		8FF31D6A05699386B2EA3A5F /* Pods_DouYuAPPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC19344B5DBA48E3E7361BD /* Pods_DouYuAPPUITests.framework */; };
+		C86C1C1D1E89FD8A00EABC77 /* LSYUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C1B1E89FD8A00EABC77 /* LSYUser.swift */; };
+		C86C1C1E1E89FD8A00EABC77 /* LSYUserTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C1C1E89FD8A00EABC77 /* LSYUserTool.swift */; };
+		C86C1C251E8A064300EABC77 /* Yo_PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C241E8A064300EABC77 /* Yo_PageContentView.swift */; };
+		C86C1C271E8A10D400EABC77 /* Yo_Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C261E8A10D400EABC77 /* Yo_Common.swift */; };
+		C86C1C2D1E8A153600EABC77 /* Yo_GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C2C1E8A153600EABC77 /* Yo_GameViewController.swift */; };
+		C86C1C2F1E8A154700EABC77 /* Yo_AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C2E1E8A154700EABC77 /* Yo_AmuseViewController.swift */; };
+		C86C1C311E8A155C00EABC77 /* Yo_FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C301E8A155C00EABC77 /* Yo_FunnyViewController.swift */; };
+		C86C1C331E8A42AF00EABC77 /* Yo_BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C321E8A42AF00EABC77 /* Yo_BaseViewController.swift */; };
+		C86C1C351E8A42D100EABC77 /* Yo_BaseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C341E8A42D100EABC77 /* Yo_BaseContentView.swift */; };
+		C86C1C391E8A437D00EABC77 /* Yo_RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C381E8A437D00EABC77 /* Yo_RecommendViewController.swift */; };
+		C86C1C3C1E8A4B6500EABC77 /* Yo_BaseCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C3B1E8A4B6500EABC77 /* Yo_BaseCollectionViewModel.swift */; };
+		C86C1C411E8A662800EABC77 /* Yo_AnchorBaseGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C401E8A662800EABC77 /* Yo_AnchorBaseGroup.swift */; };
 		C8B60C531E79115500AE7BCC /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C4E1E79115500AE7BCC /* ConfigurableView.swift */; };
 		C8B60C541E79115500AE7BCC /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C4F1E79115500AE7BCC /* GenericCollectionViewCell.swift */; };
 		C8B60C551E79115500AE7BCC /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C501E79115500AE7BCC /* GenericTableViewCell.swift */; };
@@ -31,8 +43,6 @@
 		C8B632441E89177800AF3871 /* Yo_MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632411E89177800AF3871 /* Yo_MainNavigationController.swift */; };
 		C8B632451E89177800AF3871 /* Yo_MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632421E89177800AF3871 /* Yo_MainTabBarController.swift */; };
 		C8B6324A1E891A3400AF3871 /* LSYNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632471E891A3400AF3871 /* LSYNetWorkTool.swift */; };
-		C8B6324B1E891A3400AF3871 /* LSYUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632481E891A3400AF3871 /* LSYUser.swift */; };
-		C8B6324C1E891A3400AF3871 /* LSYUserTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632491E891A3400AF3871 /* LSYUserTool.swift */; };
 		EC296E95D6E1C610A914514B /* Pods_DouYuAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB6B5F88308139976277775 /* Pods_DouYuAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +79,18 @@
 		89C04BE8F493309CA7C6FFD5 /* Pods-DouYuAPPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPPTests/Pods-DouYuAPPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F54649E5C0E5680D3670074 /* Pods_DouYuAPPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuAPPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C551C7A0D3BCA41CE16F61 /* Pods-DouYuAPPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPPTests/Pods-DouYuAPPTests.release.xcconfig"; sourceTree = "<group>"; };
+		C86C1C1B1E89FD8A00EABC77 /* LSYUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSYUser.swift; sourceTree = "<group>"; };
+		C86C1C1C1E89FD8A00EABC77 /* LSYUserTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSYUserTool.swift; sourceTree = "<group>"; };
+		C86C1C241E8A064300EABC77 /* Yo_PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_PageContentView.swift; sourceTree = "<group>"; };
+		C86C1C261E8A10D400EABC77 /* Yo_Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_Common.swift; sourceTree = "<group>"; };
+		C86C1C2C1E8A153600EABC77 /* Yo_GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_GameViewController.swift; sourceTree = "<group>"; };
+		C86C1C2E1E8A154700EABC77 /* Yo_AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_AmuseViewController.swift; sourceTree = "<group>"; };
+		C86C1C301E8A155C00EABC77 /* Yo_FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_FunnyViewController.swift; sourceTree = "<group>"; };
+		C86C1C321E8A42AF00EABC77 /* Yo_BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_BaseViewController.swift; sourceTree = "<group>"; };
+		C86C1C341E8A42D100EABC77 /* Yo_BaseContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_BaseContentView.swift; sourceTree = "<group>"; };
+		C86C1C381E8A437D00EABC77 /* Yo_RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RecommendViewController.swift; sourceTree = "<group>"; };
+		C86C1C3B1E8A4B6500EABC77 /* Yo_BaseCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_BaseCollectionViewModel.swift; sourceTree = "<group>"; };
+		C86C1C401E8A662800EABC77 /* Yo_AnchorBaseGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_AnchorBaseGroup.swift; sourceTree = "<group>"; };
 		C8B60C4E1E79115500AE7BCC /* ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
 		C8B60C4F1E79115500AE7BCC /* GenericCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewCell.swift; sourceTree = "<group>"; };
 		C8B60C501E79115500AE7BCC /* GenericTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
@@ -87,8 +109,6 @@
 		C8B632411E89177800AF3871 /* Yo_MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainNavigationController.swift; sourceTree = "<group>"; };
 		C8B632421E89177800AF3871 /* Yo_MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainTabBarController.swift; sourceTree = "<group>"; };
 		C8B632471E891A3400AF3871 /* LSYNetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSYNetWorkTool.swift; sourceTree = "<group>"; };
-		C8B632481E891A3400AF3871 /* LSYUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSYUser.swift; sourceTree = "<group>"; };
-		C8B632491E891A3400AF3871 /* LSYUserTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSYUserTool.swift; sourceTree = "<group>"; };
 		CFC19344B5DBA48E3E7361BD /* Pods_DouYuAPPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuAPPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67E80F4407FC38DCA0C1A9C /* Pods-DouYuAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPP/Pods-DouYuAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		EC839EB0D65B8940088F3D55 /* Pods-DouYuAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPP/Pods-DouYuAPP.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +207,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C86C1C1A1E89FD8A00EABC77 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C86C1C1B1E89FD8A00EABC77 /* LSYUser.swift */,
+				C86C1C1C1E89FD8A00EABC77 /* LSYUserTool.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		C86C1C1F1E8A060B00EABC77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C86C1C241E8A064300EABC77 /* Yo_PageContentView.swift */,
+				C86C1C341E8A42D100EABC77 /* Yo_BaseContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C86C1C3A1E8A4B5500EABC77 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C86C1C3B1E8A4B6500EABC77 /* Yo_BaseCollectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C86C1C3D1E8A5EF000EABC77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C86C1C401E8A662800EABC77 /* Yo_AnchorBaseGroup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C8B60C4D1E79115500AE7BCC /* ConfigureUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +257,10 @@
 			isa = PBXGroup;
 			children = (
 				C8B60C591E7911B500AE7BCC /* Yo_HomeViewController.swift */,
+				C86C1C381E8A437D00EABC77 /* Yo_RecommendViewController.swift */,
+				C86C1C2C1E8A153600EABC77 /* Yo_GameViewController.swift */,
+				C86C1C2E1E8A154700EABC77 /* Yo_AmuseViewController.swift */,
+				C86C1C301E8A155C00EABC77 /* Yo_FunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -323,6 +381,9 @@
 		C8B6323D1E89177800AF3871 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C86C1C3D1E8A5EF000EABC77 /* Model */,
+				C86C1C3A1E8A4B5500EABC77 /* ViewModel */,
+				C86C1C1F1E8A060B00EABC77 /* View */,
 				C8B632461E891A3400AF3871 /* Tools */,
 				C8B6323E1E89177800AF3871 /* Category */,
 				C8B632401E89177800AF3871 /* Controller */,
@@ -343,6 +404,7 @@
 			children = (
 				C8B632411E89177800AF3871 /* Yo_MainNavigationController.swift */,
 				C8B632421E89177800AF3871 /* Yo_MainTabBarController.swift */,
+				C86C1C321E8A42AF00EABC77 /* Yo_BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -350,9 +412,9 @@
 		C8B632461E891A3400AF3871 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C86C1C1A1E89FD8A00EABC77 /* User */,
 				C8B632471E891A3400AF3871 /* LSYNetWorkTool.swift */,
-				C8B632481E891A3400AF3871 /* LSYUser.swift */,
-				C8B632491E891A3400AF3871 /* LSYUserTool.swift */,
+				C86C1C261E8A10D400EABC77 /* Yo_Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -527,6 +589,7 @@
 					1FD4D2E31E76CDA6003D485F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 97A9RUBN84;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					1FD4D2F71E76CDA6003D485F = {
@@ -732,26 +795,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B60C5D1E7911B500AE7BCC /* Yo_HomeViewController.swift in Sources */,
+				C86C1C311E8A155C00EABC77 /* Yo_FunnyViewController.swift in Sources */,
 				C8B60C551E79115500AE7BCC /* GenericTableViewCell.swift in Sources */,
 				C8B632451E89177800AF3871 /* Yo_MainTabBarController.swift in Sources */,
+				C86C1C251E8A064300EABC77 /* Yo_PageContentView.swift in Sources */,
 				C8B60C771E79128100AE7BCC /* Yo_ProfileContentView.swift in Sources */,
 				C8B60C541E79115500AE7BCC /* GenericCollectionViewCell.swift in Sources */,
 				C8B6324A1E891A3400AF3871 /* LSYNetWorkTool.swift in Sources */,
 				C8B60C571E79115500AE7BCC /* GenericViewController.swift in Sources */,
 				C8B632441E89177800AF3871 /* Yo_MainNavigationController.swift in Sources */,
+				C86C1C2F1E8A154700EABC77 /* Yo_AmuseViewController.swift in Sources */,
 				C8B60C631E7911F000AE7BCC /* Yo_LiveViewController.swift in Sources */,
 				C8B60C561E79115500AE7BCC /* GenericView.swift in Sources */,
 				C8B60C751E79127400AE7BCC /* Yo_FllowContentView.swift in Sources */,
-				C8B6324B1E891A3400AF3871 /* LSYUser.swift in Sources */,
+				C86C1C3C1E8A4B6500EABC77 /* Yo_BaseCollectionViewModel.swift in Sources */,
+				C86C1C1D1E89FD8A00EABC77 /* LSYUser.swift in Sources */,
+				C86C1C271E8A10D400EABC77 /* Yo_Common.swift in Sources */,
 				C8B60C731E79126800AE7BCC /* Yo_LiveContentView.swift in Sources */,
 				C8B60C6F1E7911FD00AE7BCC /* Yo_ProfileViewController.swift in Sources */,
+				C86C1C351E8A42D100EABC77 /* Yo_BaseContentView.swift in Sources */,
+				C86C1C411E8A662800EABC77 /* Yo_AnchorBaseGroup.swift in Sources */,
 				C8B632431E89177800AF3871 /* Yo_MainCategory.swift in Sources */,
-				C8B6324C1E891A3400AF3871 /* LSYUserTool.swift in Sources */,
+				C86C1C1E1E89FD8A00EABC77 /* LSYUserTool.swift in Sources */,
 				C8B60C711E79121900AE7BCC /* Yo_HomeContentView.swift in Sources */,
 				C8B60C531E79115500AE7BCC /* ConfigurableView.swift in Sources */,
 				C8B60C691E7911F600AE7BCC /* Yo_FllowViewController.swift in Sources */,
 				C8B60C811E793FB800AE7BCC /* Yo_HomeViewModel.swift in Sources */,
 				1FD4D2E81E76CDA6003D485F /* AppDelegate.swift in Sources */,
+				C86C1C2D1E8A153600EABC77 /* Yo_GameViewController.swift in Sources */,
+				C86C1C391E8A437D00EABC77 /* Yo_RecommendViewController.swift in Sources */,
+				C86C1C331E8A42AF00EABC77 /* Yo_BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -886,12 +959,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 97A9RUBN84;
 				INFOPLIST_FILE = DouYuAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shiyoung-li.ContentView.DouYuAPP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -902,12 +978,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 97A9RUBN84;
 				INFOPLIST_FILE = DouYuAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shiyoung-li.ContentView.DouYuAPP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

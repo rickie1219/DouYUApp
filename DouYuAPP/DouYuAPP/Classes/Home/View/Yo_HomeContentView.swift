@@ -21,11 +21,20 @@ class Yo_HomeContentView: GenericView {
     
     override func configureView() {
         super.configureView()
-        
- 
+
+    }
+}
+
+extension Yo_HomeContentView {
+    
+    public func configPageContentView(parentViewController partentVC: UIViewController?) {
+        let childVcs = [Yo_RecommendViewController(), Yo_GameViewController(), Yo_AmuseViewController(), Yo_FunnyViewController()]
+                let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabbarH
+        let pageContentView = Yo_PageContentView(frame: CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH), chidrenViewControllers: childVcs, parentViewController: partentVC)
+        addSubview(pageContentView)
     }
     
-    // MARK: - 设置导航栏
+     // MARK: - 设置导航栏
     public func configureNavigation(viewController vc: UIViewController) {
         vc.navigationItem.leftBarButtonItem = UIBarButtonItem.item(imageName: "logo", target: vc, action: .logoDidClick)
         
@@ -38,7 +47,7 @@ class Yo_HomeContentView: GenericView {
     public func setDelegate(ViewModel vm: Yo_HomeViewModel) {
         contentViewDelegate = vm
     }
-    
+
 }
 
 private extension Selector {

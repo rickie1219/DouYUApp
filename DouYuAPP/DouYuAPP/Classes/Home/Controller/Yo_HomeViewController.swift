@@ -15,7 +15,12 @@ class Yo_HomeViewController: GenericViewController<Yo_HomeContentView> {
         
         contentView.configureNavigation(viewController: self)
         //        contentView.setDelegate(ViewModel: homeViewModel)
+        
+        contentView.configPageContentView(parentViewController: self)
+        
+        
     }
+  
     
     public func logoDidClick() {
         print("logo")

@@ -16,6 +16,7 @@ public class GenericViewController<View: GenericView>: UIViewController {
     
     public init() {
         super.init(nibName: nil, bundle: nil)
+        automaticallyAdjustsScrollViewInsets = false
     }
     
     public required init?(coder aDecoder: NSCoder) {
