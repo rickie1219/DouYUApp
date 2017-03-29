@@ -8,12 +8,7 @@
 
 import UIKit
 
-class Yo_HomeViewModel: NSObject, Yo_HomeContentViewDelegate {
+class Yo_HomeViewModel: NSObject {
+    
 
-    
-    
-    func homeNavigationLeftBarDidClick() {
-        
-        print("====")
-    }
 }

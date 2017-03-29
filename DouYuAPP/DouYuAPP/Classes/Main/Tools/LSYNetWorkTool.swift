@@ -18,7 +18,7 @@ public enum HTTPMethod: String {
 
 public class LSYHttpHeader {
     
-    static var header: [String : String] = ["application/x-www-form-urlencoded; charset=UTF-8":"Content-Type"]
+    static var header: [String : String]? = nil
     
     // MARK: - 设置http请求头
     public class func setHeader(httpHeader: () -> [String : String]) {
@@ -47,10 +47,9 @@ fileprivate class LSYBaseNetWorkTool {
     
     typealias completionHandler = (_ result: Any?, _ error: (error:Error?, code: Int)) -> Void
     var completionHandler: completionHandler?
-    
+ 
     fileprivate class func httpRequest(url httpUrl: String, parmaters: [String: Any], method: HTTPMethod, completionHandler: @escaping completionHandler) {
         
-        print(LSYHttpHeader.header)
         switch method {
         case .get:
             Alamofire.request(httpUrl, method: .get, parameters: parmaters, headers: LSYHttpHeader.header).responseJSON { (response) in

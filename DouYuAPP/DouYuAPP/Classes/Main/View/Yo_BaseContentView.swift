@@ -13,8 +13,6 @@ class Yo_BaseContentView: GenericView {
     
     override func configureView() {
         super.configureView()
-        setupUI()
-        
     }
     
     lazy var collectionView: UICollectionView = {[weak self] in
@@ -26,8 +24,10 @@ class Yo_BaseContentView: GenericView {
 }
 
 extension Yo_BaseContentView {
-    fileprivate func setupUI() {
+    public func setupUI() {
         addSubview(collectionView)
-        collectionView.frame = bounds
+        collectionView.snp.makeConstraints { (maker) in
+            maker.top.bottom.left.right.equalTo(self)
+        }
     }
 }

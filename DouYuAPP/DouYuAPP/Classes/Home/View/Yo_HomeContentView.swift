@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol Yo_HomeContentViewDelegate: NSObjectProtocol {
-
-    func homeNavigationLeftBarDidClick()
-}
+//protocol Yo_HomeContentViewDelegate: NSObjectProtocol {
+//
+//    func homeNavigationLeftBarDidClick()
+//}
 
 class Yo_HomeContentView: GenericView {
     
-    var contentViewDelegate: Yo_HomeContentViewDelegate?
+//    var contentViewDelegate: Yo_HomeContentViewDelegate?
     
     public var viewController: UIViewController?
     
@@ -45,8 +45,9 @@ extension Yo_HomeContentView {
     }
     
     public func setDelegate(ViewModel vm: Yo_HomeViewModel) {
-        contentViewDelegate = vm
+//        contentViewDelegate = vm
     }
+   
 
 }
 

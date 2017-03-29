@@ -15,3 +15,5 @@ let kTitleViewH : CGFloat = 40
 
 let kScreenW = UIScreen.main.bounds.width
 let kScreenH = UIScreen.main.bounds.height
+
+let GenerateUrl = "http://capi.douyucdn.cn/api/v1/"

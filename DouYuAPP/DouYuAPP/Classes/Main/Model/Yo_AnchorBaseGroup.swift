@@ -13,5 +13,5 @@ class Yo_AnchorBaseGroup: NSObject {
     var icon_url : String = ""
     
     var icon_name : String = "home_header_normal"
-    lazy var anchors : [Any] = [Any]()
+    lazy var anchors : [Yo_AnchorModel] = [Yo_AnchorModel]()
 }
