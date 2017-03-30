@@ -10,6 +10,7 @@ target 'DouYuAPP' do
   pod 'ObjectMapper'
   pod 'Alamofire'
   pod 'KeychainAccess'
+  pod 'Kingfisher'
 
   target 'DouYuAPPTests' do
     inherit! :search_paths

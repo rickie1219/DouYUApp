@@ -24,5 +24,7 @@ public class GenericCollectionViewCell: UICollectionViewCell, ConfigurableView {
         configureView()
     }
     
-    public func configureView() {}
+    public func configureView() {
+        contentView.backgroundColor = UIColor.white
+    }
 }

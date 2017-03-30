@@ -28,7 +28,10 @@
 		C88466291E8B840E00EB57AB /* Yo_AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88466281E8B840E00EB57AB /* Yo_AnchorModel.swift */; };
 		C884662B1E8B85C500EB57AB /* Yo_BaseResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884662A1E8B85C500EB57AB /* Yo_BaseResultModel.swift */; };
 		C884662D1E8B86F800EB57AB /* Yo_RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884662C1E8B86F800EB57AB /* Yo_RecommendViewModel.swift */; };
-		C884662F1E8B948B00EB57AB /* Yo_HomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884662E1E8B948B00EB57AB /* Yo_HomeNormalCell.swift */; };
+		C8A572071E8CE51C00C84579 /* Yo_BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A572061E8CE51C00C84579 /* Yo_BaseCollectionViewCell.swift */; };
+		C8A5720B1E8CF12000C84579 /* Yo_RecommendNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A5720A1E8CF12000C84579 /* Yo_RecommendNormalCell.swift */; };
+		C8A5720D1E8CFF5900C84579 /* Yo_RecommendCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A5720C1E8CFF5900C84579 /* Yo_RecommendCollectionViewModel.swift */; };
+		C8A572111E8D014200C84579 /* Yo_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A572101E8D014200C84579 /* Yo_Protocol.swift */; };
 		C8B60C531E79115500AE7BCC /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C4E1E79115500AE7BCC /* ConfigurableView.swift */; };
 		C8B60C541E79115500AE7BCC /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C4F1E79115500AE7BCC /* GenericCollectionViewCell.swift */; };
 		C8B60C551E79115500AE7BCC /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C501E79115500AE7BCC /* GenericTableViewCell.swift */; };
@@ -98,7 +101,10 @@
 		C88466281E8B840E00EB57AB /* Yo_AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_AnchorModel.swift; sourceTree = "<group>"; };
 		C884662A1E8B85C500EB57AB /* Yo_BaseResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_BaseResultModel.swift; sourceTree = "<group>"; };
 		C884662C1E8B86F800EB57AB /* Yo_RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RecommendViewModel.swift; sourceTree = "<group>"; };
-		C884662E1E8B948B00EB57AB /* Yo_HomeNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_HomeNormalCell.swift; sourceTree = "<group>"; };
+		C8A572061E8CE51C00C84579 /* Yo_BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		C8A5720A1E8CF12000C84579 /* Yo_RecommendNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RecommendNormalCell.swift; sourceTree = "<group>"; };
+		C8A5720C1E8CFF5900C84579 /* Yo_RecommendCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RecommendCollectionViewModel.swift; sourceTree = "<group>"; };
+		C8A572101E8D014200C84579 /* Yo_Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_Protocol.swift; sourceTree = "<group>"; };
 		C8B60C4E1E79115500AE7BCC /* ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
 		C8B60C4F1E79115500AE7BCC /* GenericCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewCell.swift; sourceTree = "<group>"; };
 		C8B60C501E79115500AE7BCC /* GenericTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
@@ -229,6 +235,7 @@
 			children = (
 				C86C1C241E8A064300EABC77 /* Yo_PageContentView.swift */,
 				C86C1C341E8A42D100EABC77 /* Yo_BaseContentView.swift */,
+				C8A572061E8CE51C00C84579 /* Yo_BaseCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,7 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				C8B60C701E79121900AE7BCC /* Yo_HomeContentView.swift */,
-				C884662E1E8B948B00EB57AB /* Yo_HomeNormalCell.swift */,
+				C8A5720A1E8CF12000C84579 /* Yo_RecommendNormalCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +303,7 @@
 			children = (
 				C8B60C801E793FB800AE7BCC /* Yo_HomeViewModel.swift */,
 				C884662C1E8B86F800EB57AB /* Yo_RecommendViewModel.swift */,
+				C8A5720C1E8CFF5900C84579 /* Yo_RecommendCollectionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -427,6 +435,7 @@
 				C86C1C1A1E89FD8A00EABC77 /* User */,
 				C8B632471E891A3400AF3871 /* LSYNetWorkTool.swift */,
 				C86C1C261E8A10D400EABC77 /* Yo_Common.swift */,
+				C8A572101E8D014200C84579 /* Yo_Protocol.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -812,13 +821,15 @@
 				C88466291E8B840E00EB57AB /* Yo_AnchorModel.swift in Sources */,
 				C884662B1E8B85C500EB57AB /* Yo_BaseResultModel.swift in Sources */,
 				C8B60C551E79115500AE7BCC /* GenericTableViewCell.swift in Sources */,
-				C884662F1E8B948B00EB57AB /* Yo_HomeNormalCell.swift in Sources */,
+				C8A572071E8CE51C00C84579 /* Yo_BaseCollectionViewCell.swift in Sources */,
 				C8B632451E89177800AF3871 /* Yo_MainTabBarController.swift in Sources */,
 				C86C1C251E8A064300EABC77 /* Yo_PageContentView.swift in Sources */,
+				C8A5720B1E8CF12000C84579 /* Yo_RecommendNormalCell.swift in Sources */,
 				C8B60C771E79128100AE7BCC /* Yo_ProfileContentView.swift in Sources */,
 				C8B60C541E79115500AE7BCC /* GenericCollectionViewCell.swift in Sources */,
 				C8B6324A1E891A3400AF3871 /* LSYNetWorkTool.swift in Sources */,
 				C8B60C571E79115500AE7BCC /* GenericViewController.swift in Sources */,
+				C8A5720D1E8CFF5900C84579 /* Yo_RecommendCollectionViewModel.swift in Sources */,
 				C8B632441E89177800AF3871 /* Yo_MainNavigationController.swift in Sources */,
 				C86C1C2F1E8A154700EABC77 /* Yo_AmuseViewController.swift in Sources */,
 				C8B60C631E7911F000AE7BCC /* Yo_LiveViewController.swift in Sources */,
@@ -835,6 +846,7 @@
 				C86C1C1E1E89FD8A00EABC77 /* LSYUserTool.swift in Sources */,
 				C8B60C711E79121900AE7BCC /* Yo_HomeContentView.swift in Sources */,
 				C8B60C531E79115500AE7BCC /* ConfigurableView.swift in Sources */,
+				C8A572111E8D014200C84579 /* Yo_Protocol.swift in Sources */,
 				C8B60C691E7911F600AE7BCC /* Yo_FllowViewController.swift in Sources */,
 				C8B60C811E793FB800AE7BCC /* Yo_HomeViewModel.swift in Sources */,
 				1FD4D2E81E76CDA6003D485F /* AppDelegate.swift in Sources */,

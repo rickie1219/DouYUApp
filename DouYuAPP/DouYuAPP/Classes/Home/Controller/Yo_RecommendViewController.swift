@@ -9,32 +9,34 @@
 import UIKit
 
 class Yo_RecommendViewController: Yo_BaseViewController {
-
+    
     override func viewDidLoad() {
-        super.viewDidLoad() 
-
-       loadData()
+        super.viewDidLoad()
+        
+        collectionViewModel.configure(collectionView: contentView.collectionView, cellClass: Yo_RecommendNormalCell.self, reuseIdentifier: kNormalCellID)
+        
+        loadData()
     }
 
     fileprivate lazy var recommendViewModel: Yo_RecommendViewModel = {
         return Yo_RecommendViewModel()
     }()
     
-    fileprivate lazy var collectionViewModel: Yo_BaseCollectionViewModel = {
-        return Yo_BaseCollectionViewModel()
+    fileprivate lazy var collectionViewModel: Yo_RecommendCollectionViewModel = {
+        return Yo_RecommendCollectionViewModel()
     }()
 
 }
 
 extension Yo_RecommendViewController {
     fileprivate func loadData() {
-        recommendViewModel.loadRecommendData { (dataArray) in
+        recommendViewModel.loadRecommendData {[weak self] (dataArray) in
             
-//            collectionViewModel.set(DataSource: { () -> [Yo_AnchorBaseGroup] in
-//                return dataArray
-//            }, completion: { 
-//                
-//            })
+            self?.collectionViewModel.set(DataSource: { () -> [Yo_AnchorBaseGroup] in
+                return dataArray
+            }, completion: { 
+                self?.contentView.collectionView.reloadData()
+            })
         }
     }
 }

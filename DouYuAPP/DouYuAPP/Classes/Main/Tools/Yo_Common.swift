@@ -17,3 +17,21 @@ let kScreenW = UIScreen.main.bounds.width
 let kScreenH = UIScreen.main.bounds.height
 
 let GenerateUrl = "http://capi.douyucdn.cn/api/v1/"
+
+struct LayoutScale {
+    var kScaleW: CGFloat = 0.0
+    var kScaleH: CGFloat = 0.0
+    init() {
+        kScaleW = kScreenW / 375
+        kScaleH = kScreenH / 667
+    }
+    static let instance: LayoutScale = LayoutScale()
+    static func width(_ distance: CGFloat) -> CGFloat {
+        return distance * LayoutScale.instance.kScaleW
+    }
+    static func height(_ distance: CGFloat) -> CGFloat {
+        return distance * LayoutScale.instance.kScaleH
+        
+    }
+    
+}

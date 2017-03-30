@@ -12,7 +12,7 @@ import UIKit
 private let kItemMargin : CGFloat = 10
 private let kHeaderViewH : CGFloat = 50
 
-private let kNormalCellID = "kNormalCellID"
+let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
 let kPrettyCellID = "kPrettyCellID"
 
@@ -22,8 +22,8 @@ let kPrettyItemH = kNormalItemW * 4 / 3
 
 class Yo_BaseCollectionViewModel: NSObject {
 
-    public func configure(collectionView collection: UICollectionView, cellClass: UITableViewCell.Type, reuseIdentifier: String) {
-        
+    public func configure(collectionView collection: UICollectionView, cellClass: UICollectionViewCell.Type, reuseIdentifier: String) {
+       
         collection.register(cellClass, forCellWithReuseIdentifier: reuseIdentifier)
         collection.dataSource = self
         collection.delegate = self
@@ -42,7 +42,9 @@ class Yo_BaseCollectionViewModel: NSObject {
 
 extension Yo_BaseCollectionViewModel: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! Yo_BaseCollectionViewCell
+        cell.configure(Item: dataSoureArr[indexPath.section].anchors[indexPath.item], indexPath: indexPath)
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -53,3 +55,4 @@ extension Yo_BaseCollectionViewModel: UICollectionViewDataSource, UICollectionVi
         return dataSoureArr.count
     }
 }
+
