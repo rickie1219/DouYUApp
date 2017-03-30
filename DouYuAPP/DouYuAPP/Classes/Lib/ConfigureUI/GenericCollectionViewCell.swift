@@ -10,7 +10,7 @@ import UIKit
 
 public class GenericCollectionViewCell: UICollectionViewCell, ConfigurableView {
     public override init(frame: CGRect) {
-        super.init(frame: CGRect.zero)
+        super.init(frame: frame)
         configureView()
     }
     
