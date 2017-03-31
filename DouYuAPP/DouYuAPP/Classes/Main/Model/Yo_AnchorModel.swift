@@ -8,6 +8,7 @@
 
 import UIKit
 import ObjectMapper
+
 class Yo_AnchorModel: Mappable {
     /// 房间ID
     var room_id : Int = 0
@@ -21,10 +22,20 @@ class Yo_AnchorModel: Mappable {
     /// 主播昵称
     var nickname : String = ""
     /// 观看人数
-    var online : Int = 0
+    var online : Int = 0 {
+        didSet{
+            if online > 10000 {
+                onlineFormat = "\(online / 10000)万在线"
+            } else {
+                onlineFormat = "\(online)在线"
+            }
+        }
+    }
     /// 所在城市
     var anchor_city : String = ""
     
+    var onlineFormat = ""
+        
     required init?(map: Map) {
         
     }

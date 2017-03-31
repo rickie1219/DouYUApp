@@ -13,7 +13,13 @@ class Yo_RecommendViewController: Yo_BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionViewModel.configure(collectionView: contentView.collectionView, cellClass: Yo_RecommendNormalCell.self, reuseIdentifier: kNormalCellID)
+        collectionViewModel.registerCell { () -> [String : UICollectionViewCell.Type] in
+            return [normalCellID: Yo_RecommendNormalCell.self, prettyCellID: Yo_RecommendPrettyCell.self]
+        }
+        
+        collectionViewModel.registerReusableView(Kind: UICollectionElementKindSectionHeader) { () -> [String : UIView.Type] in
+            return [sectionHeaderID: Yo_HomeSectionHeaderView.self]
+        }
         
         loadData()
     }
@@ -22,8 +28,8 @@ class Yo_RecommendViewController: Yo_BaseViewController {
         return Yo_RecommendViewModel()
     }()
     
-    fileprivate lazy var collectionViewModel: Yo_RecommendCollectionViewModel = {
-        return Yo_RecommendCollectionViewModel()
+    fileprivate lazy var collectionViewModel: Yo_RecommendCollectionViewModel = {[weak self] in
+        return Yo_RecommendCollectionViewModel(CollectionView: (self?.contentView.collectionView)!)
     }()
 
 }

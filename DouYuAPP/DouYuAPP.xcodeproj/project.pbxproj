@@ -50,6 +50,10 @@
 		C8B632441E89177800AF3871 /* Yo_MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632411E89177800AF3871 /* Yo_MainNavigationController.swift */; };
 		C8B632451E89177800AF3871 /* Yo_MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632421E89177800AF3871 /* Yo_MainTabBarController.swift */; };
 		C8B6324A1E891A3400AF3871 /* LSYNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632471E891A3400AF3871 /* LSYNetWorkTool.swift */; };
+		C8C002841E8DE83D00E01745 /* Yo_HomeSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C002831E8DE83D00E01745 /* Yo_HomeSectionHeaderView.swift */; };
+		C8C002861E8DE8A200E01745 /* GenericReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C002851E8DE8A200E01745 /* GenericReusableView.swift */; };
+		C8C002881E8DEA3000E01745 /* Yo_BaseSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C002871E8DEA3000E01745 /* Yo_BaseSectionHeaderView.swift */; };
+		C8C0028A1E8E21B600E01745 /* Yo_RecommendPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C002891E8E21B600E01745 /* Yo_RecommendPrettyCell.swift */; };
 		EC296E95D6E1C610A914514B /* Pods_DouYuAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB6B5F88308139976277775 /* Pods_DouYuAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +127,10 @@
 		C8B632411E89177800AF3871 /* Yo_MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainNavigationController.swift; sourceTree = "<group>"; };
 		C8B632421E89177800AF3871 /* Yo_MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainTabBarController.swift; sourceTree = "<group>"; };
 		C8B632471E891A3400AF3871 /* LSYNetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSYNetWorkTool.swift; sourceTree = "<group>"; };
+		C8C002831E8DE83D00E01745 /* Yo_HomeSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_HomeSectionHeaderView.swift; sourceTree = "<group>"; };
+		C8C002851E8DE8A200E01745 /* GenericReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericReusableView.swift; sourceTree = "<group>"; };
+		C8C002871E8DEA3000E01745 /* Yo_BaseSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_BaseSectionHeaderView.swift; sourceTree = "<group>"; };
+		C8C002891E8E21B600E01745 /* Yo_RecommendPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RecommendPrettyCell.swift; sourceTree = "<group>"; };
 		CFC19344B5DBA48E3E7361BD /* Pods_DouYuAPPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuAPPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67E80F4407FC38DCA0C1A9C /* Pods-DouYuAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPP/Pods-DouYuAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		EC839EB0D65B8940088F3D55 /* Pods-DouYuAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPP/Pods-DouYuAPP.release.xcconfig"; sourceTree = "<group>"; };
@@ -236,6 +244,7 @@
 				C86C1C241E8A064300EABC77 /* Yo_PageContentView.swift */,
 				C86C1C341E8A42D100EABC77 /* Yo_BaseContentView.swift */,
 				C8A572061E8CE51C00C84579 /* Yo_BaseCollectionViewCell.swift */,
+				C8C002871E8DEA3000E01745 /* Yo_BaseSectionHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 				C8B60C501E79115500AE7BCC /* GenericTableViewCell.swift */,
 				C8B60C511E79115500AE7BCC /* GenericView.swift */,
 				C8B60C521E79115500AE7BCC /* GenericViewController.swift */,
+				C8C002851E8DE8A200E01745 /* GenericReusableView.swift */,
 			);
 			path = ConfigureUI;
 			sourceTree = "<group>";
@@ -294,6 +304,8 @@
 			children = (
 				C8B60C701E79121900AE7BCC /* Yo_HomeContentView.swift */,
 				C8A5720A1E8CF12000C84579 /* Yo_RecommendNormalCell.swift */,
+				C8C002831E8DE83D00E01745 /* Yo_HomeSectionHeaderView.swift */,
+				C8C002891E8E21B600E01745 /* Yo_RecommendPrettyCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -819,14 +831,17 @@
 				C884662D1E8B86F800EB57AB /* Yo_RecommendViewModel.swift in Sources */,
 				C86C1C311E8A155C00EABC77 /* Yo_FunnyViewController.swift in Sources */,
 				C88466291E8B840E00EB57AB /* Yo_AnchorModel.swift in Sources */,
+				C8C0028A1E8E21B600E01745 /* Yo_RecommendPrettyCell.swift in Sources */,
 				C884662B1E8B85C500EB57AB /* Yo_BaseResultModel.swift in Sources */,
 				C8B60C551E79115500AE7BCC /* GenericTableViewCell.swift in Sources */,
 				C8A572071E8CE51C00C84579 /* Yo_BaseCollectionViewCell.swift in Sources */,
+				C8C002861E8DE8A200E01745 /* GenericReusableView.swift in Sources */,
 				C8B632451E89177800AF3871 /* Yo_MainTabBarController.swift in Sources */,
 				C86C1C251E8A064300EABC77 /* Yo_PageContentView.swift in Sources */,
 				C8A5720B1E8CF12000C84579 /* Yo_RecommendNormalCell.swift in Sources */,
 				C8B60C771E79128100AE7BCC /* Yo_ProfileContentView.swift in Sources */,
 				C8B60C541E79115500AE7BCC /* GenericCollectionViewCell.swift in Sources */,
+				C8C002841E8DE83D00E01745 /* Yo_HomeSectionHeaderView.swift in Sources */,
 				C8B6324A1E891A3400AF3871 /* LSYNetWorkTool.swift in Sources */,
 				C8B60C571E79115500AE7BCC /* GenericViewController.swift in Sources */,
 				C8A5720D1E8CFF5900C84579 /* Yo_RecommendCollectionViewModel.swift in Sources */,
@@ -846,6 +861,7 @@
 				C86C1C1E1E89FD8A00EABC77 /* LSYUserTool.swift in Sources */,
 				C8B60C711E79121900AE7BCC /* Yo_HomeContentView.swift in Sources */,
 				C8B60C531E79115500AE7BCC /* ConfigurableView.swift in Sources */,
+				C8C002881E8DEA3000E01745 /* Yo_BaseSectionHeaderView.swift in Sources */,
 				C8A572111E8D014200C84579 /* Yo_Protocol.swift in Sources */,
 				C8B60C691E7911F600AE7BCC /* Yo_FllowViewController.swift in Sources */,
 				C8B60C811E793FB800AE7BCC /* Yo_HomeViewModel.swift in Sources */,
@@ -992,7 +1008,7 @@
 				INFOPLIST_FILE = DouYuAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shiyoung-li.ContentView.DouYuAPP";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shiyoung-li.DouYuAPP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1011,7 +1027,7 @@
 				INFOPLIST_FILE = DouYuAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shiyoung-li.ContentView.DouYuAPP";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shiyoung-li.DouYuAPP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;

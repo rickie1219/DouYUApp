@@ -7,11 +7,28 @@
 //
 
 import UIKit
+import ObjectMapper
 
-class Yo_AnchorBaseGroup: NSObject {
+class Yo_AnchorBaseGroup: Mappable {
     var tag_name : String = ""
     var icon_url : String = ""
     
     var icon_name : String = "home_header_normal"
-    lazy var anchors : [Yo_AnchorModel] = [Yo_AnchorModel]()
+    //    lazy var anchors : [Yo_AnchorModel] = [Yo_AnchorModel]()
+    
+    var room_list: [Yo_AnchorModel]?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    init() {
+        
+    }
+    func mapping(map: Map) {
+        tag_name <- map["tag_name"]
+        icon_url <- map["icon_url"]
+        icon_name <- map["icon_name"]
+        room_list <- map["room_list"]
+    }
 }

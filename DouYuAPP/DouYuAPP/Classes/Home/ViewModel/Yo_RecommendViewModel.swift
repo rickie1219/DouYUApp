@@ -23,21 +23,52 @@ class Yo_RecommendViewModel: NSObject {
                     self.bigDataRoomGroup.tag_name = "热门"
                     self.bigDataRoomGroup.icon_name = "home_header_hot"
                     let anchors = Mapper<Yo_AnchorModel>().mapArray(JSONArray: success.data!)
-                    self.bigDataRoomGroup.anchors = anchors!
-                    self.dataArray.insert(self.bigDataRoomGroup, at: 0)
+                    self.bigDataRoomGroup.room_list = anchors!
                 }
             }
             
             dGroup.leave()
         }
+        
+        dGroup.enter()
+        LSYNetWorkTool.httpRequest(method: .get, url: GenerateUrl + "getVerticalRoom", parmaters: paramerers, resultClass: Yo_BaseResultModel.self) { (success, failure) in
+            if let success = success {
+                if !success.error {
+                    self.verticalRoomGroup.tag_name = "颜值"
+                    self.verticalRoomGroup.icon_name = "home_header_phone"
+                    let anchors = Mapper<Yo_AnchorModel>().mapArray(JSONArray: success.data!)
+                    self.verticalRoomGroup.room_list = anchors!
+                }
+            }
+            dGroup.leave()
+        }
+        
+        dGroup.enter()
+        LSYNetWorkTool.httpRequest(method: .get, url: GenerateUrl + "getHotCate", parmaters: paramerers, resultClass: Yo_BaseResultModel.self) { (success, failure) in
+            if let success = success {
+                self.gameGroups = Mapper<Yo_AnchorBaseGroup>().mapArray(JSONArray: success.data!)!
+            }
+            
+            dGroup.leave()
+        }
+        
         dGroup.notify(queue: DispatchQueue.main){
+            self.dataArray.insert(self.bigDataRoomGroup, at: 0)
+            self.dataArray.append(self.verticalRoomGroup)
+            self.dataArray.append(contentsOf: self.gameGroups)
             finishCallBack(self.dataArray)
         }
     }
     
-    
     lazy var bigDataRoomGroup: Yo_AnchorBaseGroup = {
-       return Yo_AnchorBaseGroup()
+        return Yo_AnchorBaseGroup()
+    }()
+    
+    lazy var verticalRoomGroup: Yo_AnchorBaseGroup = {
+        return Yo_AnchorBaseGroup()
+    }()
+    lazy var gameGroups: [Yo_AnchorBaseGroup] = {
+        return [Yo_AnchorBaseGroup]()
     }()
     
     lazy var dataArray: [Yo_AnchorBaseGroup] = {

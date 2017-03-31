@@ -12,7 +12,7 @@ import UIKit
 private let kItemMargin : CGFloat = 10
 private let kHeaderViewH : CGFloat = 50
 
-let kNormalCellID = "kNormalCellID"
+
 private let kHeaderViewID = "kHeaderViewID"
 let kPrettyCellID = "kPrettyCellID"
 
@@ -22,11 +22,27 @@ let kPrettyItemH = kNormalItemW * 4 / 3
 
 class Yo_BaseCollectionViewModel: NSObject {
 
-    public func configure(collectionView collection: UICollectionView, cellClass: UICollectionViewCell.Type, reuseIdentifier: String) {
-       
-        collection.register(cellClass, forCellWithReuseIdentifier: reuseIdentifier)
-        collection.dataSource = self
-        collection.delegate = self
+    fileprivate var collectionView: UICollectionView?
+    
+    init(CollectionView collection: UICollectionView) {
+        self.collectionView = collection
+        super.init()
+        
+        self.collectionView?.dataSource = self
+        self.collectionView?.delegate = self
+    }
+    
+    
+    public func registerCell(_ cells:() -> [String: UICollectionViewCell.Type]) {
+        for (key, value) in cells() {
+            collectionView?.register(value, forCellWithReuseIdentifier: key)
+        }
+    }
+    
+    public func registerReusableView(Kind kind: String, views:() -> [String: UIView.Type]) {
+        for (key, value) in views() {
+            collectionView?.register(value, forSupplementaryViewOfKind: kind, withReuseIdentifier: key)
+        }
     }
     
     public func set(DataSource data:() -> [Yo_AnchorBaseGroup], completion: () -> ()) {
@@ -34,21 +50,27 @@ class Yo_BaseCollectionViewModel: NSObject {
         completion()
     }
     
+    public func dequeueCellID(_ indexPath: IndexPath) -> String {
+        return ""
+    }
+    
     public lazy var dataSoureArr: [Yo_AnchorBaseGroup] = {
         let arr = [Yo_AnchorBaseGroup]()
         return arr
     }()
+    
+    
 }
 
 extension Yo_BaseCollectionViewModel: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! Yo_BaseCollectionViewCell
-        cell.configure(Item: dataSoureArr[indexPath.section].anchors[indexPath.item], indexPath: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: dequeueCellID(indexPath), for: indexPath) as! Yo_BaseCollectionViewCell
+        cell.configure(Item: dataSoureArr[indexPath.section].room_list![indexPath.item], indexPath: indexPath)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSoureArr[section].anchors.count
+        return dataSoureArr[section].room_list!.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

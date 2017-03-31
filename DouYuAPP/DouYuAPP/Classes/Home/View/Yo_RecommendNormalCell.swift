@@ -47,6 +47,7 @@ class Yo_RecommendNormalCell: Yo_BaseCollectionViewCell {
     fileprivate lazy var roomName: UILabel = {[weak self] in
         let roomName = UILabel()
         roomName.font = UIFont.systemFont(ofSize: 11)
+        roomName.textColor = UIColor.colorWithHex("#5c5e66")
         self?.contentView.addSubview(roomName)
         return roomName
     }()
@@ -54,10 +55,10 @@ class Yo_RecommendNormalCell: Yo_BaseCollectionViewCell {
 
 extension Yo_RecommendNormalCell {
     override func configure(Item: Any, indexPath: IndexPath) {
+        super.configure(Item: Item, indexPath: indexPath)
         let model = Item as! Yo_AnchorModel
-        coverImage.kf.setImage(with: URL(string: model.vertical_src))
         anchorName.text = model.nickname
-        onLineLabel.text = "\(model.online)在线"
+        onLineLabel.text = model.onlineFormat
         roomName.text = model.room_name
     }
 }

@@ -11,6 +11,8 @@ target 'DouYuAPP' do
   pod 'Alamofire'
   pod 'KeychainAccess'
   pod 'Kingfisher'
+  pod 'BCColor'
+  pod 'FSPagerView'
 
   target 'DouYuAPPTests' do
     inherit! :search_paths

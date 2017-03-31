@@ -8,15 +8,37 @@
 
 import UIKit
 
+public let normalCellID = "normalCellID"
+public let prettyCellID = "prettyCellID"
+public let sectionHeaderID = "sectionHeaderID"
+
+
 class Yo_RecommendCollectionViewModel: Yo_BaseCollectionViewModel {
 
+    override func dequeueCellID(_ indexPath: IndexPath) -> String {
+        if indexPath.section == 1 {
+            return prettyCellID
+        }
+        return normalCellID
+    }
+    
 }
-
 
 extension Yo_RecommendCollectionViewModel: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
         let width = (kScreenW - 3 * 10) / 2
-        let height = width / 1.7 + 30
-        return CGSize(width: width, height: height)
+        if indexPath.section == 1 {
+             return CGSize(width: width, height: width * 1.33 + 50)
+        }
+        
+        return CGSize(width: width, height: width / 1.7 + 30)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+       
+        let reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: sectionHeaderID, for: indexPath) as! Yo_HomeSectionHeaderView
+        reusableView.configure(Item: dataSoureArr[indexPath.section], indexPath: indexPath)
+        return reusableView
     }
 }
