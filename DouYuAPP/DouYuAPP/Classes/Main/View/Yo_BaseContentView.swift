@@ -25,6 +25,7 @@ class Yo_BaseContentView: GenericView {
         
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.backgroundColor = UIColor.white
+        collectionView.contentInset = UIEdgeInsets(top:231, left: 0, bottom: 0, right: 0)
         return collectionView
         }()
 }

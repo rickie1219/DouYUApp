@@ -66,6 +66,9 @@ extension Yo_RecommendNormalCell {
 extension Yo_RecommendNormalCell {
     
     fileprivate func setupUI() {
+        coverImage.snp.updateConstraints { (maker) in
+            maker.bottom.equalTo(contentView.snp.bottom).offset(-30)
+        }
         anchorName.snp.makeConstraints { (maker) in
             maker.left.equalTo(coverImage).offset(LayoutScale.width(6))
             maker.bottom.equalTo(coverImage).offset(LayoutScale.width(-8))

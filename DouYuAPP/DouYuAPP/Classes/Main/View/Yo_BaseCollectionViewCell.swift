@@ -15,8 +15,7 @@ class Yo_BaseCollectionViewCell: GenericCollectionViewCell {
     override func configureView() {
         super.configureView()
         coverImage.snp.makeConstraints { (maker) in
-            maker.left.right.top.equalTo(contentView)
-            maker.bottom.equalTo(contentView.snp.bottom).offset(-30)
+            maker.left.right.top.bottom.equalTo(contentView)
         }
     }
     
