@@ -88,6 +88,5 @@ extension Yo_RecommendPrettyCell {
         anchorLoc.text = model.anchor_city
         anchorName.text = model.nickname
         onLineLabel.text = model.onlineFormat
-        
     }
 }

@@ -29,6 +29,6 @@ class Yo_BaseCollectionViewCell: GenericCollectionViewCell {
 extension Yo_BaseCollectionViewCell: Yo_BaseCollectionViewProtocol {
     public func configure(Item: Any, indexPath: IndexPath) {
         let model = Item as! Yo_AnchorModel
-        coverImage.kf.setImage(with: URL(string: model.vertical_src))
+        coverImage.yo_setImage(URL(string: model.vertical_src), radius: 15)
     }
 }

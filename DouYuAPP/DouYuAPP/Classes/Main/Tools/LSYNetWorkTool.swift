@@ -34,6 +34,7 @@ public class LSYNetWorkTool {
         // MARK: - 请求参数
         LSYBaseNetWorkTool.httpRequest(url: httpUrl, parmaters: parmaters, method: HTTPMethod) { (success, error) in
             if let success = success {
+                print(success)
                 let response = resultClass.init(JSON: success as! [String : Any])
                 completionHandler(response, error)
             } else {
