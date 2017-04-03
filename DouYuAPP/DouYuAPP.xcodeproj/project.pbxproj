@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA5229D1E929380008AD445 /* Yo_TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5229C1E929380008AD445 /* Yo_TitleView.swift */; };
 		1FD4D2E81E76CDA6003D485F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD4D2E71E76CDA6003D485F /* AppDelegate.swift */; };
 		1FD4D2EF1E76CDA6003D485F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD4D2EE1E76CDA6003D485F /* Assets.xcassets */; };
 		1FD4D2FD1E76CDA6003D485F /* DouYuAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD4D2FC1E76CDA6003D485F /* DouYuAPPTests.swift */; };
@@ -81,6 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FA5229C1E929380008AD445 /* Yo_TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_TitleView.swift; sourceTree = "<group>"; };
 		1FD4D2E41E76CDA6003D485F /* DouYuAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD4D2E71E76CDA6003D485F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FD4D2EE1E76CDA6003D485F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				C86C1C341E8A42D100EABC77 /* Yo_BaseContentView.swift */,
 				C8A572061E8CE51C00C84579 /* Yo_BaseCollectionViewCell.swift */,
 				C8C002871E8DEA3000E01745 /* Yo_BaseSectionHeaderView.swift */,
+				1FA5229C1E929380008AD445 /* Yo_TitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -868,6 +871,7 @@
 				C870EC431E8F833B00839FA9 /* Yo_HomeCycleViewModel.swift in Sources */,
 				C8A5720D1E8CFF5900C84579 /* Yo_RecommendCollectionViewModel.swift in Sources */,
 				C8B632441E89177800AF3871 /* Yo_MainNavigationController.swift in Sources */,
+				1FA5229D1E929380008AD445 /* Yo_TitleView.swift in Sources */,
 				C86C1C2F1E8A154700EABC77 /* Yo_AmuseViewController.swift in Sources */,
 				C8B60C631E7911F000AE7BCC /* Yo_LiveViewController.swift in Sources */,
 				C8B60C561E79115500AE7BCC /* GenericView.swift in Sources */,

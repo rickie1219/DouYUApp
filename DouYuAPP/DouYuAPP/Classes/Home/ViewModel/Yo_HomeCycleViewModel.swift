@@ -43,6 +43,7 @@ extension Yo_HomeCycleViewModel: FSPagerViewDataSource, FSPagerViewDelegate{
         cell.imageView?.kf.setImage(with: URL(string: (dataSoureArray?[index].pic_url)!))
         cell.textLabel?.text = dataSoureArray?[index].title
         cell.textLabel?.font = UIFont.systemFont(ofSize: 13)
+        cell.textLabel?.superview?.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         return cell
     }
     

@@ -48,7 +48,6 @@ extension UIImageView {
     func yo_setImage(_ url: URL?, radius: CGFloat) {
         
         let p = RoundCornerImageProcessor(cornerRadius: radius)
-       
         self.kf.setImage(with: url, placeholder: nil, options: [.processor(p)], progressBlock: nil, completionHandler: nil)
         
         // KingfisherOptionsInfoItem

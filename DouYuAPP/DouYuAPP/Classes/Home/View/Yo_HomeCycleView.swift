@@ -29,7 +29,7 @@ class Yo_HomeCycleView: FSPagerView {
     public lazy var pageControl: FSPageControl = {
         let pageControl = FSPageControl()
         pageControl.contentHorizontalAlignment = .right
-        pageControl.contentInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        pageControl.contentInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 10)
         pageControl.setFillColor(UIColor.orange, for: .selected)
         return pageControl
     }()
