@@ -65,8 +65,6 @@ extension Yo_HomeContentView {
     public func setDelegate(ViewModel vm: Yo_HomeViewModel) {
 //        contentViewDelegate = vm
     }
-   
-
 }
 
 

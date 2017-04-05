@@ -1,13 +1,14 @@
 //
-//  Yo_MainCategory.swift
-//  SwiftProjectBaseFrame
+//  Yo_MainExtension.swift
+//  DouYuAPP
 //
-//  Created by apple on 2017/2/28.
-//  Copyright © 2017年 apple. All rights reserved.
+//  Created by shying li on 2017/4/5.
+//  Copyright © 2017年 李世洋. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import Kingfisher
+
 
 extension UITableViewCell {
     class func register(TableView table: UITableView, identifier: String) {
@@ -51,27 +52,27 @@ extension UIImageView {
         self.kf.setImage(with: url, placeholder: UIImage(named: placeholder) , options: [.processor(p)], progressBlock: nil, completionHandler: nil)
         
         // KingfisherOptionsInfoItem
-//        KingfisherManager.shared.downloader.downloadImage(with: url!, options: [.processor(p)], progressBlock: nil) { (image, error, _, _) in
-//            if let image = image {
-//                self.image = image
-//
-//                DispatchQueue.global().async {
-//                    print("--- \(Thread.current)")
-//                    let rect = CGRect(origin: CGPoint(x: 0, y: 0), size: self.frame.size)
-//                    UIGraphicsBeginImageContextWithOptions(rect.size, false, UIScreen.main.scale)
-//                    UIGraphicsGetCurrentContext()?.addPath(UIBezierPath(roundedRect: rect, byRoundingCorners: UIRectCorner.allCorners, cornerRadii: CGSize(width: radius, height: radius)).cgPath)
-//                    UIGraphicsGetCurrentContext()?.clip()
-//                    image.draw(in: rect)
-//                    UIGraphicsGetCurrentContext()?.drawPath(using: .fillStroke)
-//                    let output = UIGraphicsGetImageFromCurrentImageContext()
-//                    UIGraphicsEndImageContext()
-//                    DispatchQueue.main.async {
-//                        self.image = output
-//                        print(Thread.current)
-//                    }
-//                }
-//            }
-//        }
+        //        KingfisherManager.shared.downloader.downloadImage(with: url!, options: [.processor(p)], progressBlock: nil) { (image, error, _, _) in
+        //            if let image = image {
+        //                self.image = image
+        //
+        //                DispatchQueue.global().async {
+        //                    print("--- \(Thread.current)")
+        //                    let rect = CGRect(origin: CGPoint(x: 0, y: 0), size: self.frame.size)
+        //                    UIGraphicsBeginImageContextWithOptions(rect.size, false, UIScreen.main.scale)
+        //                    UIGraphicsGetCurrentContext()?.addPath(UIBezierPath(roundedRect: rect, byRoundingCorners: UIRectCorner.allCorners, cornerRadii: CGSize(width: radius, height: radius)).cgPath)
+        //                    UIGraphicsGetCurrentContext()?.clip()
+        //                    image.draw(in: rect)
+        //                    UIGraphicsGetCurrentContext()?.drawPath(using: .fillStroke)
+        //                    let output = UIGraphicsGetImageFromCurrentImageContext()
+        //                    UIGraphicsEndImageContext()
+        //                    DispatchQueue.main.async {
+        //                        self.image = output
+        //                        print(Thread.current)
+        //                    }
+        //                }
+        //            }
+        //        }
     }
 }
 
@@ -85,9 +86,4 @@ extension UIColor {
     }
 }
 
-extension NotificationCenter {
-    class func postNotifition(name: String) {
-        NotificationCenter.default.post(name: Notification.Name(rawValue: name), object: nil)
-    }
-}
 

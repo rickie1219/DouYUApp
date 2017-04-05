@@ -33,6 +33,8 @@
 		C870EC4D1E8FAB4700839FA9 /* Yo_GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C870EC4C1E8FAB4700839FA9 /* Yo_GameViewModel.swift */; };
 		C88154901E949BA900922C32 /* Yo_PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881548F1E949BA900922C32 /* Yo_PageTitleView.swift */; };
 		C88154921E94CFFA00922C32 /* Yo_BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88154911E94CFFA00922C32 /* Yo_BaseViewModel.swift */; };
+		C881549F1E94EFEB00922C32 /* Yo_MainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881549E1E94EFEB00922C32 /* Yo_MainExtension.swift */; };
+		C88154A11E94F17800922C32 /* Yo_RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88154A01E94F17800922C32 /* Yo_RxExtension.swift */; };
 		C88466291E8B840E00EB57AB /* Yo_AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88466281E8B840E00EB57AB /* Yo_AnchorModel.swift */; };
 		C884662B1E8B85C500EB57AB /* Yo_BaseResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884662A1E8B85C500EB57AB /* Yo_BaseResultModel.swift */; };
 		C884662D1E8B86F800EB57AB /* Yo_RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884662C1E8B86F800EB57AB /* Yo_RecommendViewModel.swift */; };
@@ -54,7 +56,6 @@
 		C8B60C751E79127400AE7BCC /* Yo_FllowContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C741E79127400AE7BCC /* Yo_FllowContentView.swift */; };
 		C8B60C771E79128100AE7BCC /* Yo_ProfileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C761E79128100AE7BCC /* Yo_ProfileContentView.swift */; };
 		C8B60C811E793FB800AE7BCC /* Yo_HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B60C801E793FB800AE7BCC /* Yo_HomeViewModel.swift */; };
-		C8B632431E89177800AF3871 /* Yo_MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6323F1E89177800AF3871 /* Yo_MainCategory.swift */; };
 		C8B632441E89177800AF3871 /* Yo_MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632411E89177800AF3871 /* Yo_MainNavigationController.swift */; };
 		C8B632451E89177800AF3871 /* Yo_MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632421E89177800AF3871 /* Yo_MainTabBarController.swift */; };
 		C8B6324A1E891A3400AF3871 /* LSYNetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B632471E891A3400AF3871 /* LSYNetWorkTool.swift */; };
@@ -118,6 +119,8 @@
 		C870EC4C1E8FAB4700839FA9 /* Yo_GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_GameViewModel.swift; sourceTree = "<group>"; };
 		C881548F1E949BA900922C32 /* Yo_PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_PageTitleView.swift; sourceTree = "<group>"; };
 		C88154911E94CFFA00922C32 /* Yo_BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_BaseViewModel.swift; sourceTree = "<group>"; };
+		C881549E1E94EFEB00922C32 /* Yo_MainExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainExtension.swift; sourceTree = "<group>"; };
+		C88154A01E94F17800922C32 /* Yo_RxExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RxExtension.swift; sourceTree = "<group>"; };
 		C88466281E8B840E00EB57AB /* Yo_AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_AnchorModel.swift; sourceTree = "<group>"; };
 		C884662A1E8B85C500EB57AB /* Yo_BaseResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_BaseResultModel.swift; sourceTree = "<group>"; };
 		C884662C1E8B86F800EB57AB /* Yo_RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RecommendViewModel.swift; sourceTree = "<group>"; };
@@ -139,7 +142,6 @@
 		C8B60C741E79127400AE7BCC /* Yo_FllowContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_FllowContentView.swift; sourceTree = "<group>"; };
 		C8B60C761E79128100AE7BCC /* Yo_ProfileContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_ProfileContentView.swift; sourceTree = "<group>"; };
 		C8B60C801E793FB800AE7BCC /* Yo_HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_HomeViewModel.swift; sourceTree = "<group>"; };
-		C8B6323F1E89177800AF3871 /* Yo_MainCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainCategory.swift; sourceTree = "<group>"; };
 		C8B632411E89177800AF3871 /* Yo_MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainNavigationController.swift; sourceTree = "<group>"; };
 		C8B632421E89177800AF3871 /* Yo_MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_MainTabBarController.swift; sourceTree = "<group>"; };
 		C8B632471E891A3400AF3871 /* LSYNetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSYNetWorkTool.swift; sourceTree = "<group>"; };
@@ -283,6 +285,15 @@
 				C884662A1E8B85C500EB57AB /* Yo_BaseResultModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C881549D1E94EFD000922C32 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C881549E1E94EFEB00922C32 /* Yo_MainExtension.swift */,
+				C88154A01E94F17800922C32 /* Yo_RxExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C8B60C4D1E79115500AE7BCC /* ConfigureUI */ = {
@@ -437,22 +448,14 @@
 		C8B6323D1E89177800AF3871 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C881549D1E94EFD000922C32 /* Extension */,
 				C86C1C3D1E8A5EF000EABC77 /* Model */,
 				C86C1C3A1E8A4B5500EABC77 /* ViewModel */,
 				C86C1C1F1E8A060B00EABC77 /* View */,
 				C8B632461E891A3400AF3871 /* Tools */,
-				C8B6323E1E89177800AF3871 /* Category */,
 				C8B632401E89177800AF3871 /* Controller */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		C8B6323E1E89177800AF3871 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				C8B6323F1E89177800AF3871 /* Yo_MainCategory.swift */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		C8B632401E89177800AF3871 /* Controller */ = {
@@ -853,6 +856,7 @@
 			files = (
 				C8B60C5D1E7911B500AE7BCC /* Yo_HomeViewController.swift in Sources */,
 				C884662D1E8B86F800EB57AB /* Yo_RecommendViewModel.swift in Sources */,
+				C881549F1E94EFEB00922C32 /* Yo_MainExtension.swift in Sources */,
 				C86C1C311E8A155C00EABC77 /* Yo_FunnyViewController.swift in Sources */,
 				C88466291E8B840E00EB57AB /* Yo_AnchorModel.swift in Sources */,
 				C8C0028A1E8E21B600E01745 /* Yo_RecommendPrettyCell.swift in Sources */,
@@ -864,6 +868,7 @@
 				C86C1C251E8A064300EABC77 /* Yo_PageContentView.swift in Sources */,
 				C8A5720B1E8CF12000C84579 /* Yo_RecommendNormalCell.swift in Sources */,
 				C8B60C771E79128100AE7BCC /* Yo_ProfileContentView.swift in Sources */,
+				C88154A11E94F17800922C32 /* Yo_RxExtension.swift in Sources */,
 				C8B60C541E79115500AE7BCC /* GenericCollectionViewCell.swift in Sources */,
 				C870EC491E8F980700839FA9 /* Yo_HomeCycleView.swift in Sources */,
 				C870EC451E8F889F00839FA9 /* Yo_HomeCycleModel.swift in Sources */,
@@ -886,7 +891,6 @@
 				C8B60C6F1E7911FD00AE7BCC /* Yo_ProfileViewController.swift in Sources */,
 				C86C1C351E8A42D100EABC77 /* Yo_BaseContentView.swift in Sources */,
 				C86C1C411E8A662800EABC77 /* Yo_AnchorBaseGroup.swift in Sources */,
-				C8B632431E89177800AF3871 /* Yo_MainCategory.swift in Sources */,
 				C86C1C1E1E89FD8A00EABC77 /* LSYUserTool.swift in Sources */,
 				C8B60C711E79121900AE7BCC /* Yo_HomeContentView.swift in Sources */,
 				C8B60C531E79115500AE7BCC /* ConfigurableView.swift in Sources */,

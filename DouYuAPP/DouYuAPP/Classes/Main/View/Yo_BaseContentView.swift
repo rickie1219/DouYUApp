@@ -33,16 +33,9 @@ class Yo_BaseContentView: GenericView {
 
 extension Yo_BaseContentView {
     fileprivate func addNotifitionCenter() {
-        NotificationCenter.default
-            .rx.notification(Notification.Name(rawValue: baseContentViewName), object: nil).subscribe(onNext: { (notifition) in
-                self.stopAnimations()
-            }, onError: { (error) in
-                print("error\(error)")
-            }, onCompleted: {
-                print("onCompleted")
-            }, onDisposed: {
-                print("onDisposed")
-            }).addDisposableTo(self.disposeBag)
+        NotificationCenter.addObserver(name: baseContentViewName, disposable: disposeBag) { 
+            self.stopAnimations()
+        }
     }
     
     public func addIndicatorView() {

@@ -40,7 +40,7 @@ extension Yo_HomeCycleViewModel: FSPagerViewDataSource, FSPagerViewDelegate{
     
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: cycleViewCellID, at: index)
-        cell.imageView?.kf.setImage(with: URL(string: (dataSoureArray?[index].pic_url)!))
+        cell.imageView?.yo_setImage(URL(string: (dataSoureArray?[index].pic_url)!), placeholder: "Img_default", radius: 0)
         cell.textLabel?.text = dataSoureArray?[index].title
         cell.textLabel?.font = UIFont.systemFont(ofSize: 13)
         cell.textLabel?.superview?.backgroundColor = UIColor.black.withAlphaComponent(0.4)
