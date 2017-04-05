@@ -85,6 +85,7 @@ extension Yo_RecommendPrettyCell {
     override func configure(Item: Any, indexPath: IndexPath) {
         super.configure(Item: Item, indexPath: indexPath)
         let model = Item as! Yo_AnchorModel
+        coverImage.yo_setImage(URL(string: model.vertical_src), placeholder: "Img_default", radius: 20)
         anchorLoc.text = model.anchor_city
         anchorName.text = model.nickname
         onLineLabel.text = model.onlineFormat

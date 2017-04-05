@@ -19,6 +19,8 @@ let kScreenH = UIScreen.main.bounds.height
 
 let GenerateUrl = "http://capi.douyucdn.cn/api/v1/"
 
+let baseContentViewName = "baseContentViewName"
+
 struct LayoutScale {
     var kScaleW: CGFloat = 0.0
     var kScaleH: CGFloat = 0.0

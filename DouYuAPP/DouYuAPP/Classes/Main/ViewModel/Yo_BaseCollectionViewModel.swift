@@ -70,7 +70,7 @@ extension Yo_BaseCollectionViewModel: UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataSoureArr[section].room_list!.count
+        return dataSoureArr[section].room_list?.count ?? 0
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

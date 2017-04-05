@@ -7,34 +7,55 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class Yo_BaseContentView: GenericView {
     
-    
+    fileprivate let disposeBag = DisposeBag()
     override func configureView() {
         super.configureView()
+        
+        addNotifitionCenter()
+        
     }
     
-    lazy var collectionView: UICollectionView = {[weak self] in
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = 10
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        layout.headerReferenceSize = CGSize(width: kScreenW, height: 50)
-        
-        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.white
-        collectionView.contentInset = UIEdgeInsets(top:231, left: 0, bottom: 0, right: 0)
-        return collectionView
+    fileprivate lazy var animImageView : UIImageView = { [unowned self] in
+        let imageView = UIImageView(image: UIImage(named: "img_loading_1"))
+        imageView.animationImages = [UIImage(named : "img_loading_1")!, UIImage(named : "img_loading_2")!]
+        imageView.animationDuration = 0.5
+        imageView.animationRepeatCount = LONG_MAX
+        imageView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
+        return imageView
         }()
+    
 }
 
 extension Yo_BaseContentView {
-    public func setupUI() {
-        addSubview(collectionView)
-        collectionView.snp.makeConstraints { (maker) in
-            maker.top.bottom.left.right.equalTo(self)
+    fileprivate func addNotifitionCenter() {
+        NotificationCenter.default
+            .rx.notification(Notification.Name(rawValue: baseContentViewName), object: nil).subscribe(onNext: { (notifition) in
+                self.stopAnimations()
+            }, onError: { (error) in
+                print("error\(error)")
+            }, onCompleted: {
+                print("onCompleted")
+            }, onDisposed: {
+                print("onDisposed")
+            }).addDisposableTo(self.disposeBag)
+    }
+    
+    public func addIndicatorView() {
+        animImageView.isHidden = false
+        addSubview(animImageView)
+        animImageView.snp.makeConstraints { (maker) in
+            maker.centerX.centerY.equalTo(self)
         }
+        animImageView.startAnimating()
+    }
+    
+    fileprivate func stopAnimations() {
+        self.animImageView.isHidden = true
+        animImageView.stopAnimating()
     }
 }

@@ -45,10 +45,10 @@ extension Date {
 }
 
 extension UIImageView {
-    func yo_setImage(_ url: URL?, radius: CGFloat) {
+    func yo_setImage(_ url: URL?, placeholder: String, radius: CGFloat) {
         
         let p = RoundCornerImageProcessor(cornerRadius: radius)
-        self.kf.setImage(with: url, placeholder: nil, options: [.processor(p)], progressBlock: nil, completionHandler: nil)
+        self.kf.setImage(with: url, placeholder: UIImage(named: placeholder) , options: [.processor(p)], progressBlock: nil, completionHandler: nil)
         
         // KingfisherOptionsInfoItem
 //        KingfisherManager.shared.downloader.downloadImage(with: url!, options: [.processor(p)], progressBlock: nil) { (image, error, _, _) in
@@ -82,6 +82,12 @@ extension UIColor {
     
     class func randomColor() -> UIColor {
         return UIColor(r: CGFloat(arc4random_uniform(256)), g: CGFloat(arc4random_uniform(256)), b: CGFloat(arc4random_uniform(256)))
+    }
+}
+
+extension NotificationCenter {
+    class func postNotifition(name: String) {
+        NotificationCenter.default.post(name: Notification.Name(rawValue: name), object: nil)
     }
 }
 

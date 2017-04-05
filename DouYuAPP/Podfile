@@ -13,6 +13,8 @@ target 'DouYuAPP' do
   pod 'Kingfisher'
   pod 'BCColor'
   pod 'FSPagerView'
+  pod 'RxSwift',    '~> 3.0'
+  pod 'RxCocoa',    '~> 3.0'
 
   target 'DouYuAPPTests' do
     inherit! :search_paths

@@ -9,7 +9,7 @@
 import UIKit
 import FSPagerView
 
-class Yo_RecommendContentView: GenericView {
+class Yo_RecommendContentView: Yo_BaseContentView {
     
     override func configureView() {
         super.configureView()
@@ -70,5 +70,6 @@ extension Yo_RecommendContentView {
         gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
         cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
         
+        addIndicatorView()
     }
 }

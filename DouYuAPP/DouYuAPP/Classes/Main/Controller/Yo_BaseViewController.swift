@@ -13,7 +13,6 @@ class Yo_BaseViewController: GenericViewController<Yo_BaseContentView> {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        contentView.setupUI()
         
     }
 

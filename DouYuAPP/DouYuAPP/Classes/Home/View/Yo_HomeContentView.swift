@@ -8,12 +8,13 @@
 
 import UIKit
 
+
 //protocol Yo_HomeContentViewDelegate: NSObjectProtocol {
 //
 //    func homeNavigationLeftBarDidClick()
 //}
 
-class Yo_HomeContentView: GenericView {
+class Yo_HomeContentView: Yo_BaseContentView {
     
 //    var contentViewDelegate: Yo_HomeContentViewDelegate?
     
@@ -23,7 +24,6 @@ class Yo_HomeContentView: GenericView {
     override func configureView() {
         super.configureView()
 
-        
     }
   
     public lazy var pageTitleView: Yo_PageTitleView = {
@@ -41,7 +41,6 @@ extension Yo_HomeContentView {
         pageTitleView.delegate = partentVC
         configureNavigation(viewController: partentVC!)
         configPageContentView(partentVC: partentVC)
-        
     }
     
     fileprivate func configPageContentView(partentVC: Yo_HomeViewController?) {
@@ -67,9 +66,9 @@ extension Yo_HomeContentView {
 //        contentViewDelegate = vm
     }
    
-    
 
 }
+
 
 private extension Selector {
     static let logoDidClick = #selector(Yo_HomeViewController.logoDidClick)

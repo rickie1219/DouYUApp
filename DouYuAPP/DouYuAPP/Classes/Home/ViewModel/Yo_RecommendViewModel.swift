@@ -63,6 +63,7 @@ class Yo_RecommendViewModel: NSObject {
             moreGroup.tag_name = "更多"
             self.gameArray.append(moreGroup)
             finishCallBack(self.dataArray, self.gameArray)
+            NotificationCenter.postNotifition(name: baseContentViewName)
         }
     }
     

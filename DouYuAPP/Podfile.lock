@@ -6,6 +6,9 @@ PODS:
   - KeychainAccess (3.0.1)
   - Kingfisher (3.5.2)
   - ObjectMapper (2.2.5)
+  - RxCocoa (3.2.0):
+    - RxSwift (~> 3.1)
+  - RxSwift (3.2.0)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
@@ -16,6 +19,8 @@ DEPENDENCIES:
   - KeychainAccess
   - Kingfisher
   - ObjectMapper
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
   - SnapKit (~> 3.2.0)
 
 SPEC CHECKSUMS:
@@ -26,8 +31,10 @@ SPEC CHECKSUMS:
   KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
   Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
   ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
+  RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
+  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: ff3e42d361d6c18c198c33411537ed67126a2100
+PODFILE CHECKSUM: fb5afda71eb1b118de8b20d70837da2ac349eee0
 
 COCOAPODS: 1.2.0

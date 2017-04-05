@@ -47,7 +47,7 @@ extension Yo_HomeGameViewCell {
         gameName.text = model?.tag_name
         
         if let iconUrl = URL(string: model?.icon_url ?? "") {
-            coverImage.yo_setImage(iconUrl, radius: 104)
+            coverImage.yo_setImage(iconUrl, placeholder: "Img_default", radius: 104)
 //            coverImage.kf.setImage(with: iconUrl)
         } else {
             coverImage.image = UIImage(named: "home_more_btn")

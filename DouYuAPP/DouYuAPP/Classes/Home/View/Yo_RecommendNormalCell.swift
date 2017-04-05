@@ -57,6 +57,7 @@ extension Yo_RecommendNormalCell {
     override func configure(Item: Any, indexPath: IndexPath) {
         super.configure(Item: Item, indexPath: indexPath)
         let model = Item as! Yo_AnchorModel
+        coverImage.yo_setImage(URL(string: model.vertical_src), placeholder: "Img_default", radius: 15)
         anchorName.text = model.nickname
         onLineLabel.text = model.onlineFormat
         roomName.text = model.room_name
