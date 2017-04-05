@@ -9,14 +9,11 @@
 import UIKit
 
 class Yo_HomeViewController: GenericViewController<Yo_HomeContentView> {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        contentView.configureNavigation(viewController: self)
-        //        contentView.setDelegate(ViewModel: homeViewModel)
-        
-        contentView.configPageContentView(parentViewController: self)
+       
+        contentView.setupUI(partentVC: self)
         
     }
   
@@ -41,6 +38,17 @@ class Yo_HomeViewController: GenericViewController<Yo_HomeContentView> {
         let viewModel = Yo_HomeViewModel()
         return viewModel
     }()
+    
+}
+extension Yo_HomeViewController : PageTitleViewDelegate {
+    func pageTitleView(_ titleView: Yo_PageTitleView, selectedIndex index: Int) {
+        self.contentView.pageContentView.setCurrentIndex(index)
+    }
 }
 
+extension Yo_HomeViewController: PageContentViewDelegate {
+    func pageContentView(_ contentView: Yo_PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        self.contentView.pageTitleView.setTitleWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+}
 

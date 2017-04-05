@@ -53,6 +53,7 @@ class Yo_RecommendContentView: GenericView {
         self?.collectionView.addSubview(gameView)
         return gameView
         }()
+   
 }
 
 private let kCycleViewH = kScreenW * 3 / 8
@@ -68,5 +69,6 @@ extension Yo_RecommendContentView {
         
         gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
         cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
+        
     }
 }
