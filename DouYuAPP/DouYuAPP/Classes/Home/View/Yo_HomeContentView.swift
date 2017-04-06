@@ -7,19 +7,26 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 
-//protocol Yo_HomeContentViewDelegate: NSObjectProtocol {
-//
-//    func homeNavigationLeftBarDidClick()
-//}
+protocol Yo_HomeContentViewDelegate: NSObjectProtocol {
+
+    func barButtonItemlogoTap(_ item: UIBarButtonItem?)
+    func barButtonItemSearchTap(_ item: UIBarButtonItem?)
+    func barButtonItemScanTap(_ item: UIBarButtonItem?)
+    func barButtonItemHistoryTap(_ item: UIBarButtonItem?)
+}
 
 class Yo_HomeContentView: Yo_BaseContentView {
     
-//    var contentViewDelegate: Yo_HomeContentViewDelegate?
+    weak var delegate: Yo_HomeContentViewDelegate?
     
     public var viewController: UIViewController?
     public var pageContentView: Yo_PageContentView!
+    
+    fileprivate let disposebag = DisposeBag()
     
     override func configureView() {
         super.configureView()
@@ -54,23 +61,25 @@ extension Yo_HomeContentView {
     
      // MARK: - 设置导航栏
     fileprivate func configureNavigation(viewController vc: Yo_HomeViewController) {
-        vc.navigationItem.leftBarButtonItem = UIBarButtonItem.item(imageName: "logo", target: vc, action: .logoDidClick)
+        let logoItem = UIBarButtonItem.item(imageName: "logo", disposable: disposebag, subscribe: {[weak self] in
+            self?.delegate?.barButtonItemlogoTap(nil)
+        })
         
-        let searchItem = UIBarButtonItem.item(imageName: "btn_search", target: vc, action: .searchDidClick)
-        let scanItem = UIBarButtonItem.item(imageName: "Image_scan", target: vc, action: .scanDidClick)
-        let historyItem = UIBarButtonItem.item(imageName: "image_my_history", target: vc, action: .historyDidClick)
+        let searchItem = UIBarButtonItem.item(imageName: "btn_search", disposable: disposebag, subscribe: {
+            self.delegate?.barButtonItemSearchTap(nil)
+        })
+        let scanItem = UIBarButtonItem.item(imageName: "Image_scan", disposable: disposebag, subscribe: {
+            self.delegate?.barButtonItemScanTap(nil)
+        })
+        let historyItem = UIBarButtonItem.item(imageName: "image_my_history", disposable: disposebag, subscribe: {
+            self.delegate?.barButtonItemHistoryTap(nil)
+        })
+        vc.navigationItem.leftBarButtonItem = logoItem
         vc.navigationItem.rightBarButtonItems = [historyItem, scanItem, searchItem]
     }
     
     public func setDelegate(ViewModel vm: Yo_HomeViewModel) {
-//        contentViewDelegate = vm
+        delegate = vm
     }
 }
 
-
-private extension Selector {
-    static let logoDidClick = #selector(Yo_HomeViewController.logoDidClick)
-    static let searchDidClick = #selector(Yo_HomeViewController.searchDidClick)
-    static let scanDidClick = #selector(Yo_HomeViewController.scanDidClick)
-    static let historyDidClick = #selector(Yo_HomeViewController.historyDidClick)
-}

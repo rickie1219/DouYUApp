@@ -29,6 +29,10 @@ class Yo_BaseContentView: GenericView {
         return imageView
         }()
     
+    deinit {
+        
+    }
+    
 }
 
 extension Yo_BaseContentView {

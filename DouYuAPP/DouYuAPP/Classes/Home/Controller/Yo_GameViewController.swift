@@ -10,10 +10,11 @@ import UIKit
 
 class Yo_GameViewController: UIViewController {
 
+    fileprivate let disposebag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.yellow
+     
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,4 +33,12 @@ class Yo_GameViewController: UIViewController {
     }
     */
 
+}
+
+class test: NSObject {
+    
+    
+    deinit {
+        
+    }
 }

@@ -9,6 +9,7 @@
 import UIKit
 import BCColor
 
+
 let kStatusBarH : CGFloat = 20
 let kNavigationBarH : CGFloat = 44
 let kTabbarH : CGFloat = 44

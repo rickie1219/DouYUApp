@@ -15,31 +15,36 @@ class Yo_HomeViewController: GenericViewController<Yo_HomeContentView> {
        
         contentView.setupUI(partentVC: self)
         
+        contentView.setDelegate(ViewModel: homeViewModel)
     }
-  
+
     
-    public func logoDidClick() {
-        print("logo")
-    }
-    
-    public func searchDidClick() {
-        print("search")
-    }
-    
-    public func historyDidClick() {
-        print("history")
-    }
-    
-    public func scanDidClick() {
-        print("scan")
-    }
-    
-    private lazy var homeViewModel: Yo_HomeViewModel = {
+    private lazy var homeViewModel: Yo_HomeViewModel = {[weak self] in
         let viewModel = Yo_HomeViewModel()
+        viewModel.delegate = self
         return viewModel
     }()
     
 }
+
+extension Yo_HomeViewController: Yo_HomeViewModelDelegate {
+    func barButtonItemlogoTap(_ item: UIBarButtonItem?) {
+        
+    }
+    
+    func barButtonItemSearchTap(_ item: UIBarButtonItem?) {
+        
+    }
+    
+    func barButtonItemScanTap(_ item: UIBarButtonItem?) {
+        
+    }
+    
+    func barButtonItemHistoryTap(_ item: UIBarButtonItem?) {
+        
+    }
+}
+
 extension Yo_HomeViewController : PageTitleViewDelegate {
     func pageTitleView(_ titleView: Yo_PageTitleView, selectedIndex index: Int) {
         self.contentView.pageContentView.setCurrentIndex(index)

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import RxSwift
 import RxCocoa
 
@@ -19,12 +20,14 @@ extension NotificationCenter {
         self.default
             .rx.notification(Notification.Name(rawValue: baseContentViewName), object: nil).subscribe(onNext: { (notifition) in
                 subscribe()
-            }, onError: { (error) in
-                subscribe()
-            }, onCompleted: {
-                subscribe()
-            }, onDisposed: {
-                print("onDisposed")
             }).addDisposableTo(disposable)
+    }
+}
+
+extension UIButton {
+    func bindFunction(disposable: DisposeBag, subscribe:@escaping () -> ())  {
+        self.rx.tap.subscribe(onNext: { (_) in
+            subscribe()
+        }).addDisposableTo(disposable)
     }
 }

@@ -8,7 +8,8 @@
 
 import Foundation
 import Kingfisher
-
+import RxSwift
+import RxCocoa
 
 extension UITableViewCell {
     class func register(TableView table: UITableView, identifier: String) {
@@ -18,13 +19,13 @@ extension UITableViewCell {
 }
 
 extension UIBarButtonItem {
-    class func item(imageName name: String, target: Any?, action: Selector?) -> UIBarButtonItem {
+    class func item(imageName name: String, disposable: DisposeBag, subscribe: @escaping () -> ()) -> UIBarButtonItem {
         
         let itemButton = UIButton(type: UIButtonType.custom)
         itemButton.setImage(UIImage(named: name), for: UIControlState.normal)
         itemButton.setImage(UIImage(named: name + "_click"), for: UIControlState.highlighted)
         itemButton.sizeToFit()
-        itemButton.addTarget(target, action: action!, for: UIControlEvents.touchUpInside)
+        itemButton.bindFunction(disposable: disposable, subscribe: subscribe)
         return UIBarButtonItem(customView: itemButton)
     }
 }
