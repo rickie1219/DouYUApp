@@ -13,6 +13,10 @@
 		1FD4D3081E76CDA6003D485F /* DouYuAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD4D3071E76CDA6003D485F /* DouYuAPPUITests.swift */; };
 		8EF407FBE85D8FC903F7A088 /* Pods_DouYuAPPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F54649E5C0E5680D3670074 /* Pods_DouYuAPPTests.framework */; };
 		8FF31D6A05699386B2EA3A5F /* Pods_DouYuAPPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC19344B5DBA48E3E7361BD /* Pods_DouYuAPPUITests.framework */; };
+		C808B1411E9B7ABB002928BE /* Yo_RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C808B1401E9B7ABB002928BE /* Yo_RoomShowViewController.swift */; };
+		C808B1431E9B7AD8002928BE /* Yo_RoomShowContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C808B1421E9B7AD8002928BE /* Yo_RoomShowContentView.swift */; };
+		C808B1471E9B7B3D002928BE /* Yo_RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C808B1461E9B7B3D002928BE /* Yo_RoomNormalViewController.swift */; };
+		C808B1491E9B7B50002928BE /* Yo_RoomNormalContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C808B1481E9B7B50002928BE /* Yo_RoomNormalContentView.swift */; };
 		C86C1C1D1E89FD8A00EABC77 /* LSYUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C1B1E89FD8A00EABC77 /* LSYUser.swift */; };
 		C86C1C1E1E89FD8A00EABC77 /* LSYUserTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C1C1E89FD8A00EABC77 /* LSYUserTool.swift */; };
 		C86C1C251E8A064300EABC77 /* Yo_PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C1C241E8A064300EABC77 /* Yo_PageContentView.swift */; };
@@ -99,6 +103,11 @@
 		89C04BE8F493309CA7C6FFD5 /* Pods-DouYuAPPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPPTests/Pods-DouYuAPPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F54649E5C0E5680D3670074 /* Pods_DouYuAPPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuAPPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C551C7A0D3BCA41CE16F61 /* Pods-DouYuAPPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuAPPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuAPPTests/Pods-DouYuAPPTests.release.xcconfig"; sourceTree = "<group>"; };
+		C808B1401E9B7ABB002928BE /* Yo_RoomShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RoomShowViewController.swift; sourceTree = "<group>"; };
+		C808B1421E9B7AD8002928BE /* Yo_RoomShowContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RoomShowContentView.swift; sourceTree = "<group>"; };
+		C808B1461E9B7B3D002928BE /* Yo_RoomNormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RoomNormalViewController.swift; sourceTree = "<group>"; };
+		C808B1481E9B7B50002928BE /* Yo_RoomNormalContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_RoomNormalContentView.swift; sourceTree = "<group>"; };
+		C808B14A1E9B830A002928BE /* DouYuAPP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DouYuAPP-Bridging-Header.h"; sourceTree = "<group>"; };
 		C86C1C1B1E89FD8A00EABC77 /* LSYUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSYUser.swift; sourceTree = "<group>"; };
 		C86C1C1C1E89FD8A00EABC77 /* LSYUserTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSYUserTool.swift; sourceTree = "<group>"; };
 		C86C1C241E8A064300EABC77 /* Yo_PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yo_PageContentView.swift; sourceTree = "<group>"; };
@@ -209,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				1FD4D2E71E76CDA6003D485F /* AppDelegate.swift */,
+				C808B14A1E9B830A002928BE /* DouYuAPP-Bridging-Header.h */,
 				C8F25DD81E77E9EE009AC961 /* Classes */,
 				1FD4D2EE1E76CDA6003D485F /* Assets.xcassets */,
 				1FD4D2F31E76CDA6003D485F /* Info.plist */,
@@ -245,6 +255,49 @@
 				5F6706262D0C31C4E0B49B98 /* Pods-DouYuAPPUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C808B13B1E9B797D002928BE /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				C808B13C1E9B797D002928BE /* Controller */,
+				C808B13D1E9B797D002928BE /* Model */,
+				C808B13E1E9B797D002928BE /* View */,
+				C808B13F1E9B797D002928BE /* ViewModel */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		C808B13C1E9B797D002928BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C808B1401E9B7ABB002928BE /* Yo_RoomShowViewController.swift */,
+				C808B1461E9B7B3D002928BE /* Yo_RoomNormalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C808B13D1E9B797D002928BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C808B13E1E9B797D002928BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C808B1421E9B7AD8002928BE /* Yo_RoomShowContentView.swift */,
+				C808B1481E9B7B50002928BE /* Yo_RoomNormalContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C808B13F1E9B797D002928BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C86C1C1A1E89FD8A00EABC77 /* User */ = {
@@ -483,6 +536,7 @@
 			isa = PBXGroup;
 			children = (
 				C8B6323D1E89177800AF3871 /* Main */,
+				C808B13B1E9B797D002928BE /* Room */,
 				C8F25DD91E77E9EE009AC961 /* Home */,
 				C8F25DE91E77F0D5009AC961 /* Live */,
 				C8F25DE81E77F0D5009AC961 /* Fllow */,
@@ -868,12 +922,14 @@
 				C86C1C251E8A064300EABC77 /* Yo_PageContentView.swift in Sources */,
 				C8A5720B1E8CF12000C84579 /* Yo_RecommendNormalCell.swift in Sources */,
 				C8B60C771E79128100AE7BCC /* Yo_ProfileContentView.swift in Sources */,
+				C808B1411E9B7ABB002928BE /* Yo_RoomShowViewController.swift in Sources */,
 				C88154A11E94F17800922C32 /* Yo_RxExtension.swift in Sources */,
 				C8B60C541E79115500AE7BCC /* GenericCollectionViewCell.swift in Sources */,
 				C870EC491E8F980700839FA9 /* Yo_HomeCycleView.swift in Sources */,
 				C870EC451E8F889F00839FA9 /* Yo_HomeCycleModel.swift in Sources */,
 				C8C002841E8DE83D00E01745 /* Yo_HomeSectionHeaderView.swift in Sources */,
 				C8B6324A1E891A3400AF3871 /* LSYNetWorkTool.swift in Sources */,
+				C808B1431E9B7AD8002928BE /* Yo_RoomShowContentView.swift in Sources */,
 				C870EC4B1E8FA5A600839FA9 /* Yo_HomeGameViewCell.swift in Sources */,
 				C8B60C571E79115500AE7BCC /* GenericViewController.swift in Sources */,
 				C870EC431E8F833B00839FA9 /* Yo_HomeCycleViewModel.swift in Sources */,
@@ -887,6 +943,8 @@
 				C86C1C3C1E8A4B6500EABC77 /* Yo_BaseCollectionViewModel.swift in Sources */,
 				C86C1C1D1E89FD8A00EABC77 /* LSYUser.swift in Sources */,
 				C86C1C271E8A10D400EABC77 /* Yo_Common.swift in Sources */,
+				C808B1491E9B7B50002928BE /* Yo_RoomNormalContentView.swift in Sources */,
+				C808B1471E9B7B3D002928BE /* Yo_RoomNormalViewController.swift in Sources */,
 				C8B60C731E79126800AE7BCC /* Yo_LiveContentView.swift in Sources */,
 				C8B60C6F1E7911FD00AE7BCC /* Yo_ProfileViewController.swift in Sources */,
 				C86C1C351E8A42D100EABC77 /* Yo_BaseContentView.swift in Sources */,
@@ -1046,7 +1104,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shiyoung-li.DouYuAPP2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DouYuAPP/DouYuAPP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1065,7 +1123,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shiyoung-li.DouYuAPP2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DouYuAPP/DouYuAPP-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.4.0)
   - BCColor (0.2)
   - CYLTabBarController (1.10.0)
+  - FDFullscreenPopGesture (1.1)
   - FSPagerView (0.3.0)
   - KeychainAccess (3.0.1)
   - Kingfisher (3.5.2)
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - Alamofire
   - BCColor
   - CYLTabBarController
+  - FDFullscreenPopGesture
   - FSPagerView
   - KeychainAccess
   - Kingfisher
@@ -27,6 +29,7 @@ SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   BCColor: 2425540cb0da92795b81a1f15b5289a92279c9eb
   CYLTabBarController: 2de9a4c26f50d33574398becf8e7b0aaed794240
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FSPagerView: 6b8f6bade4221981365ec42fd113071fa695ceb8
   KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
   Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
@@ -35,6 +38,6 @@ SPEC CHECKSUMS:
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: fb5afda71eb1b118de8b20d70837da2ac349eee0
+PODFILE CHECKSUM: 69cc9e388eb48190c78bc3868d62cab193b2d2d2
 
 COCOAPODS: 1.2.0

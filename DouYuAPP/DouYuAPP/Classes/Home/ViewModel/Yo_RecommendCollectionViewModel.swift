@@ -13,7 +13,17 @@ public let prettyCellID = "prettyCellID"
 public let sectionHeaderID = "sectionHeaderID"
 
 
+protocol Yo_RecommendCollectionViewModelDeleagte: NSObjectProtocol {
+    func presentShowRoom()
+    func pushNormalRoom()
+}
 class Yo_RecommendCollectionViewModel: Yo_BaseCollectionViewModel {
+    
+    weak var delegate: Yo_RecommendCollectionViewModelDeleagte?
+    override init(CollectionView collection: UICollectionView) {
+        super.init(CollectionView: collection)
+        collection.delegate = self
+    }
 
     override func dequeueCellID(_ indexPath: IndexPath) -> String {
         if indexPath.section == 1 {
@@ -21,6 +31,7 @@ class Yo_RecommendCollectionViewModel: Yo_BaseCollectionViewModel {
         }
         return normalCellID
     }
+    
     
 }
 
@@ -42,3 +53,20 @@ extension Yo_RecommendCollectionViewModel: UICollectionViewDelegateFlowLayout {
         return reusableView
     }
 }
+
+extension Yo_RecommendCollectionViewModel: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let anchorModel = dataSoureArr[indexPath.item].room_list?[indexPath.row]
+        
+        anchorModel?.isVertical == 0 ? pushNormalRoom() : presentShowRoom()
+    }
+    
+    fileprivate func presentShowRoom() {
+        delegate?.presentShowRoom()
+    }
+    
+    fileprivate func pushNormalRoom() {
+        delegate?.pushNormalRoom()
+    }
+}
+

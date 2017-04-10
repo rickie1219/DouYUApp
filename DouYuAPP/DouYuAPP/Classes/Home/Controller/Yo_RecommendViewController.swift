@@ -35,9 +35,10 @@ class Yo_RecommendViewController: GenericViewController<Yo_RecommendContentView>
     }()
     
     fileprivate lazy var collectionViewModel: Yo_RecommendCollectionViewModel = {[weak self] in
-        return Yo_RecommendCollectionViewModel(CollectionView: (self?.contentView.collectionView)!)
-        }()
-    
+        let viewModel = Yo_RecommendCollectionViewModel(CollectionView: (self?.contentView.collectionView)!)
+        viewModel.delegate = self
+        return viewModel
+    }()
     fileprivate lazy var cycleViewModel: Yo_HomeCycleViewModel = {[weak self] in
         let cycleViewModel = Yo_HomeCycleViewModel(CycleView: (self?.contentView.cycleView)!)
         return cycleViewModel
@@ -71,5 +72,17 @@ extension Yo_RecommendViewController {
                 self?.contentView.cycleView.reloadData()
             })
         }
+    }
+}
+
+extension Yo_RecommendViewController: Yo_RecommendCollectionViewModelDeleagte {
+    func presentShowRoom() {
+        let showRoomVc = Yo_RoomShowViewController()
+        present(showRoomVc, animated: true, completion: nil)
+    }
+    
+    func pushNormalRoom() {
+        let normalRoomVc = Yo_RoomNormalViewController()
+        navigationController?.pushViewController(normalRoomVc, animated: true)
     }
 }

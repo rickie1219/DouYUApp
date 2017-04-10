@@ -15,7 +15,8 @@ target 'DouYuAPP' do
   pod 'FSPagerView'
   pod 'RxSwift',    '~> 3.0'
   pod 'RxCocoa',    '~> 3.0'
-
+  pod 'FDFullscreenPopGesture'
+  
   target 'DouYuAPPTests' do
     inherit! :search_paths
     # Pods for testing

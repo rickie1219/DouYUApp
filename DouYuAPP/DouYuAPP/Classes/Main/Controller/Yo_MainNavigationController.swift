@@ -18,7 +18,7 @@ class Yo_MainNavigationController: UINavigationController {
     }
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        
+        viewController.hidesBottomBarWhenPushed = true
         super.pushViewController(viewController, animated: animated)
     }
 

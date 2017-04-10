@@ -29,7 +29,7 @@ class Yo_BaseCollectionViewModel: NSObject {
         super.init()
         
         self.collectionView?.dataSource = self
-        self.collectionView?.delegate = self
+        
     }
     
     
@@ -62,7 +62,7 @@ class Yo_BaseCollectionViewModel: NSObject {
     
 }
 
-extension Yo_BaseCollectionViewModel: UICollectionViewDataSource, UICollectionViewDelegate {
+extension Yo_BaseCollectionViewModel: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: dequeueCellID(indexPath), for: indexPath) as! Yo_BaseCollectionViewCell
         cell.configure(Item: dataSoureArr[indexPath.section].room_list![indexPath.item], indexPath: indexPath)
