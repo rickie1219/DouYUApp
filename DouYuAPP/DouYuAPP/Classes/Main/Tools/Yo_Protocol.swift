@@ -11,3 +11,4 @@ import Foundation
 protocol Yo_BaseCollectionViewProtocol {
     func configure(Item: Any, indexPath: IndexPath)
 }
+

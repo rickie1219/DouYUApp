@@ -17,42 +17,15 @@ class Yo_BaseContentView: GenericView {
         super.configureView()
         
         addNotifitionCenter()
-        
     }
-    
-    fileprivate lazy var animImageView : UIImageView = { [unowned self] in
-        let imageView = UIImageView(image: UIImage(named: "img_loading_1"))
-        imageView.animationImages = [UIImage(named : "img_loading_1")!, UIImage(named : "img_loading_2")!]
-        imageView.animationDuration = 0.5
-        imageView.animationRepeatCount = LONG_MAX
-        imageView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
-        return imageView
-        }()
-    
-    deinit {
-        
-    }
-    
 }
 
-extension Yo_BaseContentView {
+extension Yo_BaseContentView: AddIndicatorViewProtocol {
+    
     fileprivate func addNotifitionCenter() {
         NotificationCenter.addObserver(name: baseContentViewName, disposable: disposeBag) { 
             self.stopAnimations()
         }
     }
-    
-    public func addIndicatorView() {
-        animImageView.isHidden = false
-        addSubview(animImageView)
-        animImageView.snp.makeConstraints { (maker) in
-            maker.centerX.centerY.equalTo(self)
-        }
-        animImageView.startAnimating()
-    }
-    
-    fileprivate func stopAnimations() {
-        self.animImageView.isHidden = true
-        animImageView.stopAnimating()
-    }
+
 }
