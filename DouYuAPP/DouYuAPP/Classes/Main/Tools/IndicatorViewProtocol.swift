@@ -31,7 +31,6 @@ extension AddIndicatorViewProtocol where Self: UIView {
             maker.centerX.centerY.equalTo(self)
         }
         animImageView.startAnimating()
-        
     }
     
     func stopAnimations() {
@@ -41,9 +40,7 @@ extension AddIndicatorViewProtocol where Self: UIView {
         indicatorView.isHidden = true
         indicatorView.stopAnimating()
         indicatorView.removeFromSuperview()
-        
     }
-    
 }
 
 class InDicatorView: UIImageView {

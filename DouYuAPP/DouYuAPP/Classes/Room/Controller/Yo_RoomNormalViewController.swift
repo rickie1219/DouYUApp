@@ -7,16 +7,14 @@
 //
 
 import UIKit
+import FDFullscreenPopGesture
 
 class Yo_RoomNormalViewController: GenericViewController<Yo_RoomNormalContentView> {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        fd_prefersNavigationBarHidden = true
         
         
     }
-
-
-
 }

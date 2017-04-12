@@ -27,5 +27,4 @@ extension Yo_BaseContentView: AddIndicatorViewProtocol {
             self.stopAnimations()
         }
     }
-
 }

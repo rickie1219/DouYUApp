@@ -56,7 +56,7 @@ extension Yo_RecommendCollectionViewModel: UICollectionViewDelegateFlowLayout {
 
 extension Yo_RecommendCollectionViewModel: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let anchorModel = dataSoureArr[indexPath.item].room_list?[indexPath.row]
+        let anchorModel = dataSoureArr[indexPath.section].room_list?[indexPath.item]
         
         anchorModel?.isVertical == 0 ? pushNormalRoom() : presentShowRoom()
     }
